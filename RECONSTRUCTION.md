@@ -44,6 +44,21 @@ Swapping in a different park would silently change the benchmark the reported
 results were measured on, and any number produced that way would not be
 comparable to the numbers in `README.md` and `REPRODUCE.md`.
 
+## One class of defect to watch for
+
+Most of the replayed patches edit files with `str.replace()`, which does nothing
+and raises nothing when its anchor text does not match. A patch whose anchor had
+already drifted therefore applied *silently as a no-op* rather than failing.
+
+One such gap has been found and repaired: `AgentConfig.mode` was never added to
+`app/config.py`, because the patch that introduced it anchored on
+`model: str = "google:gemini-2.5-flash"` while the file already read
+`google-gla:`. Without it the console would not start at all. The field was
+restored exactly as the session log specifies.
+
+The whole test suite and an end-to-end console run both pass now, but that class
+of silent divergence cannot be ruled out in code paths neither exercises.
+
 ## Consequence for the reported results
 
 **The result tables in `README.md` and `REPRODUCE.md` cannot currently be

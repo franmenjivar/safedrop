@@ -83,7 +83,14 @@ class ApiConfig(BaseModel):
     google_maps_embed_key: str | None = None
 
 
+AgentMode = Literal["live", "scripted"]
+
+
 class AgentConfig(BaseModel):
+    #: "live" runs the real agents. "scripted" swaps in rule-driven stand-ins
+    #: (app/agents/scripted.py) so the console runs end to end with no model.
+    #: Scripted runs are NOT agent performance and are labelled as such.
+    mode: AgentMode = "live"
     model: str = "google-gla:gemini-2.5-flash"
     vision_model: str = "google-gla:gemini-2.5-flash"
     retries: int = 2
