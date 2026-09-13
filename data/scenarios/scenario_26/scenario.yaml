@@ -1,0 +1,29 @@
+id: SCENARIO-26
+name: Delivery site closed after launch; the hub is still open
+description: "No fault on the aircraft. The receiving facility has closed its landing\
+  \ pad since the mission launched, so the delivery cannot be completed regardless\
+  \ of how much energy remains \u2014 and the launch base is upwind and far enough\
+  \ that arriving there would consume the reserve. A staffed alternate hub is close.\
+  \ This is a contingency with no failure in it, which is the case a purely health-driven\
+  \ failsafe never sees."
+region: Wells Branch, Austin, Texas
+context_mode: offline
+decision_step: -1
+mission:
+  base:
+    name: North Austin Depot
+    latitude: 30.391260878125294
+    longitude: -97.7023308980653
+  destination:
+    name: Round Rock Clinic (PAD CLOSED)
+    latitude: 30.488500783274468
+    longitude: -97.66134815546451
+  alternate_hub:
+    name: Mills Pond Alternate Hub
+    latitude: 30.450582132501356
+    longitude: -97.66778935778439
+files:
+  telemetry_csv: telemetry.csv
+  known_elzs_geojson: known_elzs.geojson
+  ground_state_json: ground_state.json
+  ground_truth_json: ground_truth.json

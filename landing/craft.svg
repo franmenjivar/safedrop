@@ -1,0 +1,80 @@
+<svg class="craft" viewBox="-330 -250 660 500" role="img" aria-label="Plan view of a tandem-wing VTOL cargo drone: slim fuselage, forward and rear wings, eight hover rotors, twin tail booms and a payload bay slung beneath.">
+  <defs>
+    <linearGradient id="skin" x1="0" y1="-215" x2="0" y2="215" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2A3B38"/>
+      <stop offset=".45" stop-color="#152220"/>
+      <stop offset="1" stop-color="#0B1413"/>
+    </linearGradient>
+    <linearGradient id="plank" x1="-280" y1="0" x2="280" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101B19"/>
+      <stop offset=".5" stop-color="#20302D"/>
+      <stop offset="1" stop-color="#101B19"/>
+    </linearGradient>
+    <filter id="bloom" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- rotor discs: thin rings, no fill fighting the wing beneath -->
+  <g stroke="#35DCD8" fill="none" opacity=".34">
+    <circle cx="-150" cy="-72" r="38" stroke-width="1"/>
+    <circle cx="-70"  cy="-72" r="38" stroke-width="1"/>
+    <circle cx="70"   cy="-72" r="38" stroke-width="1"/>
+    <circle cx="150"  cy="-72" r="38" stroke-width="1"/>
+    <circle cx="-196" cy="118" r="42" stroke-width="1"/>
+    <circle cx="-92"  cy="118" r="42" stroke-width="1"/>
+    <circle cx="92"   cy="118" r="42" stroke-width="1"/>
+    <circle cx="196"  cy="118" r="42" stroke-width="1"/>
+  </g>
+
+  <!-- rear wing (behind the fuselage in plan) -->
+  <path d="M -282 100 q 10 -14 42 -14 h 480 q 32 0 42 14 v 22 q -10 14 -42 14 h -480 q -32 0 -42 -14 z"
+        fill="url(#plank)" stroke="#35DCD8" stroke-opacity=".26" stroke-width="1.1"/>
+  <!-- rear boom spars -->
+  <g stroke="#35DCD8" stroke-opacity=".16" stroke-width="1">
+    <path d="M -196 86 v 50 M -92 86 v 50 M 92 86 v 50 M 196 86 v 50"/>
+  </g>
+
+  <!-- forward wing -->
+  <path d="M -212 -88 q 9 -13 38 -13 h 348 q 29 0 38 13 v 20 q -9 13 -38 13 h -348 q -29 0 -38 -13 z"
+        fill="url(#plank)" stroke="#35DCD8" stroke-opacity=".26" stroke-width="1.1"/>
+  <g stroke="#35DCD8" stroke-opacity=".16" stroke-width="1">
+    <path d="M -150 -101 v 46 M -70 -101 v 46 M 70 -101 v 46 M 150 -101 v 46"/>
+  </g>
+
+  <!-- rotor hubs -->
+  <g fill="#0A1211" stroke="#35DCD8" stroke-opacity=".4" stroke-width="1">
+    <circle cx="-150" cy="-72" r="7"/><circle cx="-70" cy="-72" r="7"/>
+    <circle cx="70" cy="-72" r="7"/><circle cx="150" cy="-72" r="7"/>
+    <circle cx="-196" cy="118" r="7.5"/><circle cx="-92" cy="118" r="7.5"/>
+    <circle cx="92" cy="118" r="7.5"/><circle cx="196" cy="118" r="7.5"/>
+  </g>
+
+  <!-- twin tail booms and fins -->
+  <g fill="none" stroke="#35DCD8" stroke-opacity=".3" stroke-width="1.4">
+    <path d="M -46 134 v 68 M 46 134 v 68"/>
+    <path d="M -46 202 l -22 26 M 46 202 l 22 26"/>
+  </g>
+
+  <!-- fuselage -->
+  <path d="M 0 -218 c 13 10 19 34 19 62 v 246 c 0 30 -7 56 -19 74 c -12 -18 -19 -44 -19 -74 v -246 c 0 -28 6 -52 19 -62 z"
+        fill="url(#skin)" stroke="#8FD6D2" stroke-opacity=".22" stroke-width="1.1"/>
+
+  <!-- dorsal spine -->
+  <path d="M 0 -196 v 366" stroke="#35DCD8" stroke-opacity=".18" stroke-width="1"/>
+
+  <!-- payload bay, slung beneath: dashed because it is below the airframe -->
+  <path d="M -44 -6 h 88 v 96 q 0 12 -12 12 h -64 q -12 0 -12 -12 z"
+        fill="#0A1211" fill-opacity=".85" stroke="#35DCD8" stroke-opacity=".38"
+        stroke-width="1.1" stroke-dasharray="5 4"/>
+  <path d="M -30 18 h 60" stroke="#35DCD8" stroke-opacity=".5" stroke-width="2.5"/>
+
+  <!-- nose sensor and the single lit accent -->
+  <g filter="url(#bloom)">
+    <circle cx="0" cy="-186" r="5.5" fill="#35DCD8"/>
+    <path d="M -212 -78 h 6 M 206 -78 h 6" stroke="#35DCD8" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="-282" cy="111" r="4.5" fill="#35DCD8"/>
+    <circle cx="282" cy="111" r="4.5" fill="#35DCD8"/>
+  </g>
+</svg>

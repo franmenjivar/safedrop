@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SafeDrop — how it works</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+  /* Sectional-chart palette: chart paper, ink linework, airspace magenta,
+     water teal. Semantic pass/fail/caution stay separate from the accent. */
+  :root {
+    --paper:      #ECEDE7;
+    --paper-2:    #E3E5DD;
+    --card:       #F6F7F2;
+    --ink:        #14181B;
+    --ink-2:      #4A5259;
+    --ink-3:      #7C848B;
+    --rule:       #C9CCC2;
+    --magenta:    #B4257A;
+    --magenta-dim:#F0DCE8;
+    --teal:       #1E7A8C;
+    --pass:       #2E6F3E;
+    --fail:       #B3261E;
+    --caution:    #9A6600;
+    --shadow:     0 1px 2px rgba(20,24,27,.06), 0 8px 24px rgba(20,24,27,.05);
+  }
+
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --paper:      #11161A;
+      --paper-2:    #171D22;
+      --card:       #1A2127;
+      --ink:        #E6EAE4;
+      --ink-2:      #A3ADB4;
+      --ink-3:      #6F7A82;
+      --rule:       #2C353C;
+      --magenta:    #E966AB;
+      --magenta-dim:#3A1B2C;
+      --teal:       #57B8CB;
+      --pass:       #5DBE74;
+      --fail:       #F1685E;
+      --caution:    #DDA033;
+      --shadow:     0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper:      #11161A;
+    --paper-2:    #171D22;
+    --card:       #1A2127;
+    --ink:        #E6EAE4;
+    --ink-2:      #A3ADB4;
+    --ink-3:      #6F7A82;
+    --rule:       #2C353C;
+    --magenta:    #E966AB;
+    --magenta-dim:#3A1B2C;
+    --teal:       #57B8CB;
+    --pass:       #5DBE74;
+    --fail:       #F1685E;
+    --caution:    #DDA033;
+    --shadow:     0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 17px/1.65 "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.5rem; }
+  .col  { max-width: 40rem; }
+
+  h1, h2, h3 {
+    font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  h1 { font-weight: 800; font-size: clamp(2.6rem, 6.5vw, 4.4rem); line-height: 1.02; letter-spacing: -.032em; }
+  h2 { font-weight: 800; font-size: clamp(1.6rem, 3.2vw, 2.15rem); line-height: 1.12; letter-spacing: -.022em; }
+  h3 { font-weight: 700; font-size: 1.08rem; line-height: 1.3; letter-spacing: -.008em; }
+
+  p { margin: 0; }
+  .col > * + * { margin-top: 1.1rem; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--magenta);
+  }
+
+  .lede { font-size: 1.22rem; line-height: 1.55; color: var(--ink-2); }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  strong { font-weight: 600; }
+
+  section { padding: clamp(3.5rem, 8vw, 6rem) 0; }
+  section + section { border-top: 1px solid var(--rule); }
+
+  /* ---------- hero ---------- */
+
+  .hero { padding-top: clamp(3rem, 7vw, 5.5rem); padding-bottom: 0; }
+
+  .hero-q {
+    font-family: Archivo, sans-serif;
+    font-weight: 500;
+    font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+    line-height: 1.35;
+    color: var(--ink-2);
+    border-left: 3px solid var(--magenta);
+    padding-left: 1.15rem;
+    max-width: 34rem;
+    margin-top: 1.75rem;
+  }
+
+  .tagrow { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 2rem; }
+
+  .tag {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: .38rem .6rem;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    color: var(--ink-2);
+    background: var(--card);
+  }
+  .tag.hot { border-color: var(--caution); color: var(--caution); }
+
+  /* ---------- instrument strip ---------- */
+
+  .strip {
+    margin-top: 2.75rem;
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .strip-head {
+    display: flex; align-items: center; gap: .6rem;
+    padding: .6rem .9rem;
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper-2);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3);
+  }
+
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--fail); flex: none; }
+
+  .readouts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  }
+
+  .ro { padding: .85rem .9rem; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .ro:last-child { border-right: 0; }
+  .ro dt { font-family: "IBM Plex Mono", monospace; font-size: .66rem; letter-spacing: .11em; text-transform: uppercase; color: var(--ink-3); }
+  .ro dd { margin: .25rem 0 0; font-family: "IBM Plex Mono", monospace; font-size: 1.05rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .ro dd.bad { color: var(--fail); }
+  .ro dd.warn { color: var(--caution); }
+  .ro dd.ok { color: var(--pass); }
+
+  .strip-foot {
+    padding: .7rem .9rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: .74rem;
+    color: var(--ink-2);
+  }
+
+  /* ---------- generic blocks ---------- */
+
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1.5rem; margin-top: 2.25rem; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 1.15rem 1.25rem;
+  }
+  .card h3 { margin-bottom: .45rem; }
+  .card p { color: var(--ink-2); font-size: .95rem; }
+
+  .stage { display: grid; grid-template-columns: 2.6rem 1fr; gap: 1.1rem; align-items: start; }
+  .stage + .stage { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px dashed var(--rule); }
+
+  .stage-n {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: .78rem; font-weight: 600;
+    color: var(--magenta);
+    border: 1px solid var(--magenta);
+    border-radius: 3px;
+    text-align: center;
+    padding: .2rem 0;
+    margin-top: .15rem;
+  }
+  .stage-n.det { color: var(--teal); border-color: var(--teal); }
+  .stage p { color: var(--ink-2); font-size: .97rem; margin-top: .35rem; }
+  .stage .tools { margin-top: .55rem; font-family: "IBM Plex Mono", monospace; font-size: .76rem; color: var(--ink-3); }
+
+  /* ---------- trace ---------- */
+
+  .trace { margin-top: 2rem; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; background: var(--card); }
+  .trace-row { display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; padding: .8rem .95rem; border-bottom: 1px solid var(--rule); align-items: baseline; }
+  .trace-row:last-child { border-bottom: 0; }
+  .trace-who { font-family: "IBM Plex Mono", monospace; font-size: .68rem; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3); }
+  .trace-what { font-size: .95rem; }
+  .verdict { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: .78rem; letter-spacing: .06em; }
+  .verdict.pass { color: var(--pass); }
+  .verdict.fail { color: var(--fail); }
+  .trace-row.final { background: var(--magenta-dim); }
+
+  /* ---------- table ---------- */
+
+  .tablewrap { overflow-x: auto; margin-top: 2rem; border: 1px solid var(--rule); border-radius: 6px; background: var(--card); }
+  table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+  th, td { padding: .68rem .9rem; text-align: left; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+  th { font-family: "IBM Plex Mono", monospace; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; background: var(--paper-2); }
+  td.num { text-align: right; font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; }
+  td.win { color: var(--pass); font-weight: 600; }
+  td.lose { color: var(--fail); }
+  tbody tr:last-child td { border-bottom: 0; }
+
+  /* ---------- callout ---------- */
+
+  .callout {
+    margin-top: 2rem;
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--caution);
+    border-radius: 4px;
+    background: var(--card);
+    padding: 1.1rem 1.25rem;
+  }
+  .callout h3 { color: var(--caution); font-size: .82rem; font-family: "IBM Plex Mono", monospace; letter-spacing: .1em; text-transform: uppercase; }
+  .callout p { margin-top: .5rem; color: var(--ink-2); font-size: .95rem; }
+  .callout p + p { margin-top: .7rem; }
+
+  .rule-note { margin-top: 2.5rem; font-size: .88rem; color: var(--ink-3); max-width: 40rem; }
+
+  figure { margin: 2.5rem 0 0; }
+  figcaption { margin-top: .8rem; font-size: .84rem; color: var(--ink-3); font-family: "IBM Plex Mono", monospace; }
+  svg { display: block; max-width: 100%; height: auto; }
+
+  footer { padding: 3rem 0 4rem; border-top: 1px solid var(--rule); color: var(--ink-3); font-size: .86rem; }
+  footer a { color: var(--teal); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .strip, .trace, .card { transition: border-color .2s ease; }
+  }
+  .topnav {
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    padding: .9rem 0; border-bottom: 1px solid var(--rule); flex-wrap: wrap;
+  }
+  .topnav .brand { font-family: Archivo, sans-serif; font-weight: 800; letter-spacing: -.02em; }
+  .topnav a {
+    font-family: "IBM Plex Mono", monospace; font-size: .74rem; letter-spacing: .09em;
+    text-transform: uppercase; text-decoration: none; color: var(--ink);
+    border: 1px solid var(--magenta); border-radius: 3px; padding: .42rem .75rem;
+  }
+  .topnav a:hover, .topnav a:focus-visible { background: var(--magenta-dim); }
+  :focus-visible { outline: 2px solid var(--magenta); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <nav class="topnav">
+    <span class="brand">SafeDrop</span>
+    <a href="/">Open the operations console &rarr;</a>
+  </nav>
+
+  <section class="hero">
+    <p class="eyebrow">Forced-landing decision support</p>
+    <h1>The map said it was a park.<br>It was a dog park.</h1>
+    <p class="hero-q">Given a degraded aircraft, what is the safest <em>verified</em> contingency action available right now — and can you show your work?</p>
+    <div class="tagrow">
+      <span class="tag">3 agents</span>
+      <span class="tag">Gemini 2.5 Flash</span>
+      <span class="tag">Austin, TX</span>
+      <span class="tag">Real OSM geometry</span>
+      <span class="tag hot">Simulation only</span>
+    </div>
+
+    <div class="strip">
+      <div class="strip-head"><span class="dot"></span> Scenario 09 · decision point · t+119 s</div>
+      <dl class="readouts">
+        <div class="ro"><dt>Battery</dt><dd class="bad">15.5%</dd></div>
+        <div class="ro"><dt>SOC trend</dt><dd class="bad">−4.8 %/min</dd></div>
+        <div class="ro"><dt>Motor health</dt><dd class="warn">0.71</dd></div>
+        <div class="ro"><dt>Pack temp</dt><dd class="warn">61 °C</dd></div>
+        <div class="ro"><dt>Endurance</dt><dd class="bad">114 s</dd></div>
+        <div class="ro"><dt>Wind</dt><dd class="warn">8 m/s</dd></div>
+      </dl>
+      <div class="strip-foot">
+        Destination <strong>unreachable</strong> · base <strong>unreachable</strong> · alternate hub <strong>unreachable</strong>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="col">
+      <p class="eyebrow">The honest starting point</p>
+      <h2>Delivery drones already handle emergencies well</h2>
+      <p>Wing publishes designated landing zones and proactive contingency landings. Zipline flies redundant safety systems and a ballistic parachute. The FAA specifies lost-link procedures, return-to-launch, hold, and land-at-a-designated-waypoint. Remote pilots supervise fleets in real time.</p>
+      <p>Any pitch that opens with <em>“drones can’t handle emergencies”</em> is wrong, and a judge who knows the industry will stop listening. SafeDrop assumes all of that already works.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>What already exists</h3>
+        <p>Deterministic failsafes. Return-to-home. Preferred recovery zones. Obstacle avoidance. Traffic awareness. Remote pilot in command. SafeDrop replaces none of it.</p>
+      </div>
+      <div class="card">
+        <h3>What doesn’t</h3>
+        <p>A recovery site chosen at mission-planning time, re-checked against what is standing on it <em>this minute</em> — and a route to it re-verified against traffic that took off after you launched.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="col">
+      <p class="eyebrow">The gap</p>
+      <h2>A landing zone is a claim about right now</h2>
+      <p>The preferred site was empty when the mission was planned. Since then: a delivery van parked on it, a school let out, a food truck arrived, a crew put cones down. None of that is in the map.</p>
+      <p>In Scenario 17 the largest, flattest, best-by-geometry site in central Austin is a real off-leash dog park. The polygon says <span class="mono">leisure=park</span>. The ground says six loose animals.</p>
+    </div>
+    <div class="callout">
+      <h3>The claim SafeDrop actually makes</h3>
+      <p>An agentic workflow can synthesise aircraft state, current ground conditions, candidate sites, and traffic into a <strong>verified, explainable</strong> contingency recommendation — better than a deterministic baseline, without letting a language model near the flight controls.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="col">
+      <p class="eyebrow">Architecture</p>
+      <h2>Agents interpret. Tools calculate. A gateway decides what ships.</h2>
+      <p>Every physical quantity in a SafeDrop recommendation comes from a deterministic tool. There is no tool that lets an agent assert a number, and three separate mechanisms enforce it.</p>
+    </div>
+
+    <figure>
+      <svg viewBox="0 0 900 300" role="img" aria-label="Pipeline: telemetry is compressed, three agents run in sequence against deterministic tools, and a verification gateway gates the operator hand-off.">
+        <defs>
+          <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" fill="currentColor"/>
+          </marker>
+        </defs>
+        <g font-family="IBM Plex Mono, monospace" font-size="11" color="var(--ink-3)">
+          <!-- lane labels -->
+          <text x="8" y="42" fill="var(--teal)" font-weight="600">DETERMINISTIC</text>
+          <text x="8" y="132" fill="var(--magenta)" font-weight="600">AGENTIC</text>
+          <text x="8" y="232" fill="var(--teal)" font-weight="600">DETERMINISTIC</text>
+
+          <!-- top lane: preprocessing + tools -->
+          <g fill="var(--card)" stroke="var(--teal)" stroke-width="1.2">
+            <rect x="140" y="18" width="150" height="38" rx="4"/>
+            <rect x="330" y="18" width="150" height="38" rx="4"/>
+            <rect x="520" y="18" width="150" height="38" rx="4"/>
+            <rect x="710" y="18" width="160" height="38" rx="4"/>
+          </g>
+          <g fill="var(--ink)" font-size="10.5" text-anchor="middle">
+            <text x="215" y="42">state preprocessor</text>
+            <text x="405" y="42">energy · reachability</text>
+            <text x="595" y="42">ground feed · vision</text>
+            <text x="790" y="42">route · separation</text>
+          </g>
+
+          <!-- middle lane: agents -->
+          <g fill="var(--magenta-dim)" stroke="var(--magenta)" stroke-width="1.5">
+            <rect x="330" y="100" width="150" height="46" rx="4"/>
+            <rect x="520" y="100" width="150" height="46" rx="4"/>
+            <rect x="710" y="100" width="160" height="46" rx="4"/>
+          </g>
+          <g fill="var(--ink)" text-anchor="middle">
+            <text x="405" y="120" font-weight="600" font-size="10.5">AGENT 1</text>
+            <text x="405" y="136" font-size="10">contingency</text>
+            <text x="595" y="120" font-weight="600" font-size="10.5">AGENT 2</text>
+            <text x="595" y="136" font-size="10">ground context</text>
+            <text x="790" y="120" font-weight="600" font-size="10.5">AGENT 3</text>
+            <text x="790" y="136" font-size="10">diversion verify</text>
+          </g>
+
+          <!-- bottom lane: gateway -->
+          <g fill="var(--card)" stroke="var(--teal)" stroke-width="1.2">
+            <rect x="330" y="200" width="340" height="40" rx="4"/>
+            <rect x="710" y="200" width="160" height="40" rx="4"/>
+          </g>
+          <text x="500" y="225" fill="var(--ink)" font-size="10.5" text-anchor="middle">safety verification gateway — every check explicit</text>
+          <text x="790" y="225" fill="var(--ink)" font-size="10.5" text-anchor="middle" font-weight="600">REMOTE PILOT</text>
+
+          <!-- flows -->
+          <g stroke="var(--ink-3)" stroke-width="1.1" fill="none" marker-end="url(#ar)" color="var(--ink-3)">
+            <path d="M60 37 H134"/>
+            <path d="M290 37 H324"/>
+            <path d="M480 37 H514"/>
+            <path d="M670 37 H704"/>
+          </g>
+          <g stroke="var(--magenta)" stroke-width="1.1" fill="none" marker-end="url(#ar)" color="var(--magenta)" stroke-dasharray="3 3">
+            <path d="M405 60 V94"/><path d="M595 60 V94"/><path d="M790 60 V94"/>
+          </g>
+          <g stroke="var(--teal)" stroke-width="1.1" fill="none" marker-end="url(#ar)" color="var(--teal)">
+            <path d="M405 150 V194"/><path d="M595 150 V194"/><path d="M790 150 V194"/>
+            <path d="M670 220 H704"/>
+          </g>
+          <text x="60" y="20" fill="var(--ink-3)" font-size="10">telemetry</text>
+        </g>
+      </svg>
+      <figcaption>Agents sit between deterministic layers, never on top of them. Dashed lines are tool calls; solid lines are verified results.</figcaption>
+    </figure>
+
+    <div style="margin-top:2.5rem">
+      <div class="stage">
+        <div class="stage-n det">DET</div>
+        <div>
+          <h3>Compress the telemetry before an agent sees it</h3>
+          <p>Raw rows never reach a model. A preprocessor turns a 20-second window into labelled state: battery <span class="mono">CRITICAL</span>, motor <span class="mono">DEGRADED</span>, GPS scatter in metres RMS. This is the project’s central bet, and it is measurable — the harness can re-run the same agents on raw CSV for comparison.</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="stage-n">01</div>
+        <div>
+          <h3>Which contingency branch?</h3>
+          <p>Continue, return to base, divert, land immediately, or escalate. Agent 1 cannot estimate range — it calls feasibility tools for every option it is seriously considering and picks the least disruptive one the evidence supports.</p>
+          <p class="tools">tools: energy · endurance · destination / base / hub feasibility · reachability envelope</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="stage-n">02</div>
+        <div>
+          <h3>Which reachable site is suitable <em>right now</em>?</h3>
+          <p>The agentic core. Open geometry is not current safety. Agent 2 gathers the ground feed, inspects current site imagery, checks data freshness — then calls a deterministic constraint checker whose verdict it cannot overrule.</p>
+          <p class="tools">tools: ground feed · vision · Austin GIS · OSM · weather · freshness · hard constraints</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="stage-n">03</div>
+        <div>
+          <h3>Can the aircraft actually get there?</h3>
+          <p>Six checks per route: energy, obstacles, restricted airspace, UAV separation, descent corridor. The decision that matters is what a failure means — a separation conflict means <em>replan the path</em>; an energy shortfall means <em>abandon this site</em>. Getting that distinction right is the agent’s contribution.</p>
+          <p class="tools">tools: route planner · route energy · obstacles · restrictions · separation · descent corridor</p>
+        </div>
+      </div>
+      <div class="stage">
+        <div class="stage-n det">DET</div>
+        <div>
+          <h3>Nothing ships unverified</h3>
+          <p>The gateway re-reads the stored tool results and requires every applicable check to be explicitly true. A check that never ran is not a pass. The operator briefing is then templated from the verified package — not written by a fourth agent — so no sentence can outrun its evidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="col">
+      <p class="eyebrow">Scenario 09 · North Austin</p>
+      <h2>What a run actually looks like</h2>
+      <p>Battery critical, motor degraded, nothing reachable. Three preplanned sites inside the envelope. This is the live trace, not a mockup.</p>
+    </div>
+
+    <div class="trace">
+      <div class="trace-row"><span class="trace-who">Agent 1</span><span class="trace-what"><span class="verdict fail">LAND_IMMEDIATELY</span> — destination, base and alternate hub all fail the energy check.</span></div>
+      <div class="trace-row"><span class="trace-who">Reachability</span><span class="trace-what">3 preplanned sites inside a wind-adjusted envelope of 1.9 km.</span></div>
+      <div class="trace-row"><span class="trace-who">Agent 2</span><span class="trace-what"><span class="mono">ELZ-A</span> hospital car park — <span class="verdict fail">REJECTED</span> <span class="mono">VEHICLE_OCCUPANCY</span> · 3 vehicles seen in current imagery.</span></div>
+      <div class="trace-row"><span class="trace-who">Agent 2</span><span class="trace-what"><span class="mono">ELZ-B</span> pocket park — <span class="verdict fail">REJECTED</span> <span class="mono">PEDESTRIAN_OCCUPANCY</span> · 8 people on the lawn.</span></div>
+      <div class="trace-row"><span class="trace-who">Agent 2</span><span class="trace-what"><span class="mono">ELZ-C</span> Walnut Creek Greenbelt — <span class="verdict pass">VALID</span> · ground feed and imagery agree, 93% clear.</span></div>
+      <div class="trace-row"><span class="trace-who">Agent 3</span><span class="trace-what"><span class="mono">ROUTE-ELZ-C-1</span> direct — <span class="verdict fail">REJECTED</span> · <strong class="mono">11.3 m</strong> predicted separation against <span class="mono">DRONE-207</span>, 30 m required.</span></div>
+      <div class="trace-row"><span class="trace-who">Agent 3</span><span class="trace-what">Site is still good; the path is wrong. <span class="verdict">REPLAN</span></span></div>
+      <div class="trace-row"><span class="trace-who">Agent 3</span><span class="trace-what"><span class="mono">ROUTE-ELZ-C-2</span> lateral offset — <span class="verdict pass">VERIFIED</span> · <strong class="mono">145.1 m</strong> separation, +15.7 Wh energy margin.</span></div>
+      <div class="trace-row"><span class="trace-who">Gateway</span><span class="trace-what">Ground · energy · obstacles · restrictions · separation · descent · freshness — <span class="verdict pass">ALL PASS</span></span></div>
+      <div class="trace-row final"><span class="trace-who">Operator</span><span class="trace-what"><strong>Approval required.</strong> SafeDrop sends the recommendation to the remote Pilot in Command. It sends nothing to the aircraft.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="col">
+      <p class="eyebrow">Measured</p>
+      <h2>Against a baseline that isn’t a straw man</h2>
+      <p>The baseline is a real deterministic system: predefined thresholds, deterministic reachability, a preconfigured recovery list, nearest-feasible selection, static-map geofencing and obstacle avoidance. It is missing exactly what is being tested.</p>
+      <p>Both systems are scored by the same evaluator against ground truth authored before any agent ran — independently of either system’s own gateway, so neither can score well by declining to check anything.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Metric</th><th style="text-align:right">Baseline</th><th style="text-align:right">SafeDrop</th></tr></thead>
+        <tbody>
+          <tr><td>Safe Contingency Resolution Rate</td><td class="num lose">33%</td><td class="num win">100%</td></tr>
+          <tr><td>Contingency action accuracy</td><td class="num">100%</td><td class="num">100%</td></tr>
+          <tr><td>Ground hazard avoidance</td><td class="num lose">0%</td><td class="num win">100%</td></tr>
+          <tr><td>Airspace conflict avoidance</td><td class="num lose">0%</td><td class="num win">100%</td></tr>
+          <tr><td>Replanning success</td><td class="num lose">0%</td><td class="num win">100%</td></tr>
+          <tr><td>False-safe recommendations</td><td class="num">0%</td><td class="num">0%</td></tr>
+          <tr><td>Mean latency</td><td class="num">—</td><td class="num">≈30 s</td></tr>
+          <tr><td>Tokens · tool calls per scenario</td><td class="num">—</td><td class="num">≈54 k · 17.8</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--teal)">
+      <h3 style="color: var(--teal)">Why this table is not a 100% claim</h3>
+      <p>Fifteen scenarios is a small sample and the interval matters more than the point
+      estimate. A perfect score on 15 is consistent with a true rate as low as <strong>80%</strong>;
+      on the original six it was as low as <strong>61%</strong>. The two abstention cases,
+      taken alone, are consistent with anything above <strong>34%</strong>.</p>
+      <p>The scenarios, the ground truth, and the baseline’s configuration are all ours.
+      An independent scenario author would be the single highest-value change to this
+      evaluation. <span class="mono">evaluation/analysis.py</span> prints the intervals,
+      the per-family breakdown, and seven named threats to validity.</p>
+    </div>
+
+    <p class="rule-note">Both systems already pick the right <em>branch</em> every time. The entire gain is in which site gets chosen and whether the route to it was verified — which is what the architecture predicted, and the honest framing: SafeDrop is not better at deciding <em>that</em> the aircraft must land. Repeated over 4 runs and 24 scenario executions, the outcome metrics did not move.</p>
+  </section>
+
+  <section>
+    <div class="col">
+      <p class="eyebrow">What went wrong</p>
+      <h2>Every top-line metric read 100% while things were broken</h2>
+      <p>Four defects, none caught by a failing test. Three were found by reading agent trajectories; the fourth by opening a map.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3>Parallel tool calls beat the prompt</h3>
+        <p>Gemini issued a candidate’s four evidence tools at once, so the constraint checker ran before the imagery arrived and returned <span class="mono">UNVERIFIED</span> for everything — including a car park with five vehicles. Reconciliation silently carried the whole result. Fixed by making the tool refuse to answer while evidence is outstanding.</p>
+      </div>
+      <div class="card">
+        <h3>A false-safe hiding one position away</h3>
+        <p>Vision reported <em>0 animals</em>, at 0.9 confidence, on a pasture with four cattle. With no ground feed, that made a hazardous site <span class="mono">VALID</span>. The right site was still chosen — because it happened to be tried first. Last-resort sites now require corroboration from two independent sources.</p>
+      </div>
+      <div class="card">
+        <h3>Coordinates that were never real</h3>
+        <p>Sites were placed by bearing and distance from an arbitrary aircraft position, so a “recovery yard” sat in front of a house. Nothing in the pipeline could catch it: every check was internally consistent. Synthetic geography is invisible to synthetic tests.</p>
+      </div>
+      <div class="card">
+        <h3>A metric that rewarded the wrong thing</h3>
+        <p>Correct-abstention rate was computed over scenarios that <em>did</em> abstain rather
+        than those that <em>should</em>. A system that abstained on everything would have scored
+        100% on it. Nothing failed; the number was simply measuring the wrong denominator.</p>
+      </div>
+      <div class="card">
+        <h3>A polygon is not open ground</h3>
+        <p>OSM park boundaries enclose houses, service roads and playscapes. Each anchor is now placed at the polygon’s pole of inaccessibility and reverse-geocoded to measure the distance to the nearest mapped structure. 23 of 90 candidate sites failed and were dropped.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <h3>The hot take</h3>
+      <p>Safety-critical agents should reason over <strong>verified operational state</strong>, not raw physical telemetry — and the corollary matters more: a system that only reports outcomes will report good outcomes right up until the backstop is the only thing still working.</p>
+      <p>Trajectory logging is not a debugging convenience. It is the only place these four failures were visible.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="col">
+      <p class="eyebrow">Boundaries</p>
+      <h2>What this system will not do</h2>
+    </div>
+    <div class="grid2">
+      <div class="card"><h3>It sends no commands</h3><p><span class="mono">flight_command_sent</span> is <span class="mono">False</span> on every code path. Recommendations go to a remote Pilot in Command, who flies them. The capability to command an aircraft does not exist in the code.</p></div>
+      <div class="card"><h3>Nothing here is certified</h3><p>Generated sites are labelled <span class="mono">NON_CERTIFIED</span> and require operator review. Thresholds are prototype experiment parameters, not regulatory standards.</p></div>
+      <div class="card"><h3>Stale evidence never passes</h3><p>Data past its freshness threshold yields <span class="mono">UNVERIFIED</span> at best. A traffic service that is down is not an empty sky — it is an escalation.</p></div>
+      <div class="card"><h3>Abstention is a valid outcome</h3><p>No reachable site, no ground-safe site, no verified route: the system stops and says so, rather than producing a fluent recommendation nothing supports.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>SafeDrop — agentic forced-landing decision support. Simulation only; no aircraft is commanded. Geography © OpenStreetMap contributors (ODbL) via Nominatim; land-use context from City of Austin open GIS; weather from Open-Meteo. Site imagery generated by the project. Benchmark reproducible offline with <span class="mono">python evaluation/run_all.py --mode offline</span>.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>

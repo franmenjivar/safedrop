@@ -1,0 +1,30 @@
+# Build context: ship the source and the scenario data, nothing else.
+.venv/
+venv/
+.git/
+.github/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.idea/
+.vscode/
+.DS_Store
+**/.DS_Store
+
+# Credentials never enter the image.
+.env
+.env.*
+!.env.example
+
+# Outputs are produced at run time and mounted back out.
+results/
+trajectories/
+
+# Not part of the solution.
+EJEMPLO/
+SystemDesign/
+*.pdf

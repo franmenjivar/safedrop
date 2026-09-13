@@ -1,0 +1,26 @@
+id: SCENARIO-16
+name: No preplanned recovery site is reachable
+description: Severe battery degradation leaves every preplanned simulated recovery
+  site outside the reachable envelope. SafeDrop generates off-nominal candidates from
+  real geospatial context. Two of the three sit inside the buffer of a real mapped
+  playground and are excluded deterministically, before any agent sees them. What
+  survives is verified against current imagery and offered as NON-CERTIFIED.
+region: Pflugerville, Texas
+context_mode: offline
+decision_step: -1
+mission:
+  base:
+    name: Pflugerville Depot
+    latitude: 30.49147179388481
+    longitude: -97.62055738307494
+  destination:
+    name: Wells Branch Customer
+    latitude: 30.417062127335875
+    longitude: -97.65192231153942
+files:
+  telemetry_csv: telemetry.csv
+  known_elzs_geojson: known_elzs.geojson
+  map_features_geojson: map_features.geojson
+  ground_state_json: ground_state.json
+  image_directory: images
+  ground_truth_json: ground_truth.json

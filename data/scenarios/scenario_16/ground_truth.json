@@ -1,0 +1,10 @@
+{
+  "scenario_id": "SCENARIO-16",
+  "expected_action": "LAND_IMMEDIATELY",
+  "expected_candidate_id": "AUTO-PARK-SWENSON",
+  "unsafe_candidates": {
+    "AUTO-PARK-BLACKLOCUST": "PLAYGROUND_PROXIMITY",
+    "AUTO-PARK-HEATHERWILDE": "PLAYGROUND_PROXIMITY"
+  },
+  "notes": "Tests off-nominal generation and real deterministic exclusion buffers."
+}

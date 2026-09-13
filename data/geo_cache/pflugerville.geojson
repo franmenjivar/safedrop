@@ -1,0 +1,4233 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.5988747,
+       30.4659749
+      ],
+      [
+       -97.5977595,
+       30.4654578
+      ],
+      [
+       -97.5980206,
+       30.4653462
+      ],
+      [
+       -97.597953,
+       30.4652325
+      ],
+      [
+       -97.5977015,
+       30.4653562
+      ],
+      [
+       -97.5975244,
+       30.465482
+      ],
+      [
+       -97.5973699,
+       30.4656605
+      ],
+      [
+       -97.5971793,
+       30.4659608
+      ],
+      [
+       -97.5968827,
+       30.466438
+      ],
+      [
+       -97.5965997,
+       30.4669268
+      ],
+      [
+       -97.5962503,
+       30.4677799
+      ],
+      [
+       -97.5960648,
+       30.4684577
+      ],
+      [
+       -97.5959941,
+       30.4688842
+      ],
+      [
+       -97.5967063,
+       30.4691236
+      ],
+      [
+       -97.5965383,
+       30.4694922
+      ],
+      [
+       -97.5970064,
+       30.4696265
+      ],
+      [
+       -97.5978064,
+       30.4677764
+      ],
+      [
+       -97.5988747,
+       30.4659749
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 387447874,
+    "osm_type": "way",
+    "name": "Stone Hill Drive",
+    "display_name": "Stone Hill Drive, Stone Hill Town Center, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "parking_lot",
+    "region": "pflugerville",
+    "area_m2": 60035.9,
+    "open_lat": 30.4667301,
+    "open_lon": -97.5975686,
+    "open_radius_m": 73.3,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4670929,
+    "verified_lon": -97.5975686,
+    "nearest_feature": "amenity/charging_station EVgo at 87 m",
+    "anchor_clearance_score_m": 76.6,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6020857,
+       30.4661529
+      ],
+      [
+       -97.6004248,
+       30.4653095
+      ],
+      [
+       -97.6002249,
+       30.4653209
+      ],
+      [
+       -97.5999282,
+       30.4651852
+      ],
+      [
+       -97.5999527,
+       30.4650533
+      ],
+      [
+       -97.5985212,
+       30.4643222
+      ],
+      [
+       -97.5981943,
+       30.4648629
+      ],
+      [
+       -97.5983445,
+       30.4652818
+      ],
+      [
+       -97.5986272,
+       30.4655636
+      ],
+      [
+       -97.5996297,
+       30.4660143
+      ],
+      [
+       -97.5999216,
+       30.4656053
+      ],
+      [
+       -97.6006936,
+       30.465965
+      ],
+      [
+       -97.6003925,
+       30.4664025
+      ],
+      [
+       -97.6015713,
+       30.4669555
+      ],
+      [
+       -97.6016142,
+       30.4668886
+      ],
+      [
+       -97.6020857,
+       30.4661529
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 387447869,
+    "osm_type": "way",
+    "name": "Town Center Drive",
+    "display_name": "Town Center Drive, Stone Hill Town Center, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "parking_lot",
+    "region": "pflugerville",
+    "area_m2": 36432.1,
+    "open_lat": 30.4651631,
+    "open_lon": -97.5990113,
+    "open_radius_m": 56.5,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4651631,
+    "verified_lon": -97.5986875,
+    "nearest_feature": "amenity/parking Town Center Drive, Stone Hill Town Cente at 217 m",
+    "anchor_clearance_score_m": 207.1,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.5978675,
+       30.4650346
+      ],
+      [
+       -97.5976849,
+       30.4647668
+      ],
+      [
+       -97.5977223,
+       30.464576
+      ],
+      [
+       -97.5973319,
+       30.4643765
+      ],
+      [
+       -97.5973927,
+       30.4642833
+      ],
+      [
+       -97.5972621,
+       30.4642252
+      ],
+      [
+       -97.597311,
+       30.4641409
+      ],
+      [
+       -97.5972348,
+       30.4641037
+      ],
+      [
+       -97.5969285,
+       30.4645921
+      ],
+      [
+       -97.5976216,
+       30.4649342
+      ],
+      [
+       -97.5977338,
+       30.4650804
+      ],
+      [
+       -97.5978675,
+       30.4650346
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 913708759,
+    "osm_type": "way",
+    "name": "FM 685",
+    "display_name": "FM 685, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "parking_lot",
+    "region": "pflugerville",
+    "area_m2": 3604.0,
+    "open_lat": 30.4645272,
+    "open_lon": -97.5972168,
+    "open_radius_m": 20.0,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4645272,
+    "verified_lon": -97.5971022,
+    "nearest_feature": "amenity/parking FM 685, Pflugerville, Travis County, Tex at 22 m",
+    "anchor_clearance_score_m": 12.5,
+    "open_ground_verified": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6052778,
+       30.4550497
+      ],
+      [
+       -97.6046817,
+       30.4547856
+      ],
+      [
+       -97.6043022,
+       30.4554221
+      ],
+      [
+       -97.6048983,
+       30.4556862
+      ],
+      [
+       -97.6052778,
+       30.4550497
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 577343600,
+    "osm_type": "way",
+    "name": "East Pflugerville Parkway",
+    "display_name": "East Pflugerville Parkway, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "parking_lot",
+    "region": "pflugerville",
+    "area_m2": 5115.1,
+    "open_lat": 30.4552359,
+    "open_lon": -97.60479,
+    "open_radius_m": 32.1,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.455395,
+    "verified_lon": -97.60479,
+    "nearest_feature": "amenity/parking East Pflugerville Parkway, Pflugerville, at 18 m",
+    "anchor_clearance_score_m": 7.7,
+    "open_ground_verified": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.5980249,
+       30.4699745
+      ],
+      [
+       -97.5970803,
+       30.4696608
+      ],
+      [
+       -97.5969409,
+       30.4700024
+      ],
+      [
+       -97.5978694,
+       30.4703202
+      ],
+      [
+       -97.5980249,
+       30.4699745
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 913708773,
+    "osm_type": "way",
+    "name": "Stone Hill Drive",
+    "display_name": "Stone Hill Drive, Stone Hill Town Center, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "parking_lot",
+    "region": "pflugerville",
+    "area_m2": 3928.2,
+    "open_lat": 30.4700563,
+    "open_lon": -97.5976777,
+    "open_radius_m": 20.4,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4700563,
+    "verified_lon": -97.5977949,
+    "nearest_feature": "amenity/parking Stone Hill Drive, Stone Hill Town Center at 31 m",
+    "anchor_clearance_score_m": 20.9,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6505473,
+       30.4306163
+      ],
+      [
+       -97.6500282,
+       30.4303741
+      ],
+      [
+       -97.6497498,
+       30.4308175
+      ],
+      [
+       -97.6502689,
+       30.4310598
+      ],
+      [
+       -97.6505473,
+       30.4306163
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 926822486,
+    "osm_type": "way",
+    "name": "Wells Branch Parkway",
+    "display_name": "Wells Branch Parkway, Austin, Travis County, Texas, 78691, United States",
+    "feature_type": "parking_lot",
+    "region": "pflugerville",
+    "area_m2": 3174.9,
+    "open_lat": 30.430717,
+    "open_lon": -97.6501485,
+    "open_radius_m": 28.0,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4308557,
+    "verified_lon": -97.6501485,
+    "nearest_feature": "amenity/parking Wells Branch Parkway, Austin, Travis Cou at 15 m",
+    "anchor_clearance_score_m": 5.4,
+    "open_ground_verified": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6371433,
+       30.4439812
+      ],
+      [
+       -97.6355876,
+       30.4432135
+      ],
+      [
+       -97.6357485,
+       30.4429175
+      ],
+      [
+       -97.635783,
+       30.442764
+      ],
+      [
+       -97.6355453,
+       30.4426511
+      ],
+      [
+       -97.6345576,
+       30.4420387
+      ],
+      [
+       -97.6344554,
+       30.4418023
+      ],
+      [
+       -97.6346924,
+       30.4414492
+      ],
+      [
+       -97.6343495,
+       30.4412637
+      ],
+      [
+       -97.6341632,
+       30.4409804
+      ],
+      [
+       -97.634071,
+       30.4409479
+      ],
+      [
+       -97.634056,
+       30.4409426
+      ],
+      [
+       -97.6333991,
+       30.4406344
+      ],
+      [
+       -97.6330302,
+       30.4401668
+      ],
+      [
+       -97.6329434,
+       30.4400513
+      ],
+      [
+       -97.6326162,
+       30.4397763
+      ],
+      [
+       -97.6324,
+       30.4395944
+      ],
+      [
+       -97.6321792,
+       30.4394077
+      ],
+      [
+       -97.6317212,
+       30.4390272
+      ],
+      [
+       -97.6315762,
+       30.4389286
+      ],
+      [
+       -97.6311186,
+       30.4386442
+      ],
+      [
+       -97.6307789,
+       30.4383645
+      ],
+      [
+       -97.6306279,
+       30.4382987
+      ],
+      [
+       -97.630829,
+       30.4379715
+      ],
+      [
+       -97.6308094,
+       30.4379197
+      ],
+      [
+       -97.6306716,
+       30.4378354
+      ],
+      [
+       -97.6305196,
+       30.4377013
+      ],
+      [
+       -97.6292867,
+       30.4362885
+      ],
+      [
+       -97.6285611,
+       30.4359509
+      ],
+      [
+       -97.626272,
+       30.4347516
+      ],
+      [
+       -97.626563,
+       30.4341531
+      ],
+      [
+       -97.6269746,
+       30.4340996
+      ],
+      [
+       -97.6269605,
+       30.4339374
+      ],
+      [
+       -97.6269624,
+       30.4337722
+      ],
+      [
+       -97.6261592,
+       30.4334036
+      ],
+      [
+       -97.625836,
+       30.4332467
+      ],
+      [
+       -97.6262236,
+       30.4330194
+      ],
+      [
+       -97.626205,
+       30.4329817
+      ],
+      [
+       -97.626202,
+       30.4329484
+      ],
+      [
+       -97.6262085,
+       30.432907
+      ],
+      [
+       -97.6262293,
+       30.4328791
+      ],
+      [
+       -97.6262565,
+       30.432859
+      ],
+      [
+       -97.6263033,
+       30.4328468
+      ],
+      [
+       -97.626344,
+       30.4328389
+      ],
+      [
+       -97.6264,
+       30.432765
+      ],
+      [
+       -97.6259736,
+       30.4325876
+      ],
+      [
+       -97.6263402,
+       30.4316245
+      ],
+      [
+       -97.6242743,
+       30.43067
+      ],
+      [
+       -97.624248,
+       30.4306568
+      ],
+      [
+       -97.6240043,
+       30.4302767
+      ],
+      [
+       -97.6245947,
+       30.4292626
+      ],
+      [
+       -97.6244892,
+       30.4283277
+      ],
+      [
+       -97.6240688,
+       30.4290317
+      ],
+      [
+       -97.6232986,
+       30.4300367
+      ],
+      [
+       -97.6234282,
+       30.430633
+      ],
+      [
+       -97.6233724,
+       30.4308336
+      ],
+      [
+       -97.6234214,
+       30.4308616
+      ],
+      [
+       -97.6234527,
+       30.4309139
+      ],
+      [
+       -97.6234515,
+       30.4309637
+      ],
+      [
+       -97.6234811,
+       30.430987
+      ],
+      [
+       -97.6235156,
+       30.4310031
+      ],
+      [
+       -97.6239276,
+       30.4327866
+      ],
+      [
+       -97.624519,
+       30.4333841
+      ],
+      [
+       -97.6246851,
+       30.4336121
+      ],
+      [
+       -97.6247522,
+       30.433829
+      ],
+      [
+       -97.6249125,
+       30.4338719
+      ],
+      [
+       -97.6251056,
+       30.4339517
+      ],
+      [
+       -97.6255916,
+       30.4342069
+      ],
+      [
+       -97.6251834,
+       30.4347935
+      ],
+      [
+       -97.6260095,
+       30.4352383
+      ],
+      [
+       -97.6261433,
+       30.4353069
+      ],
+      [
+       -97.6269383,
+       30.4357127
+      ],
+      [
+       -97.6278495,
+       30.4362191
+      ],
+      [
+       -97.6289924,
+       30.4369094
+      ],
+      [
+       -97.6292218,
+       30.4371154
+      ],
+      [
+       -97.6294771,
+       30.4374098
+      ],
+      [
+       -97.6298174,
+       30.4376981
+      ],
+      [
+       -97.6295894,
+       30.4380764
+      ],
+      [
+       -97.6294131,
+       30.4382256
+      ],
+      [
+       -97.6302814,
+       30.4386338
+      ],
+      [
+       -97.6304832,
+       30.4388406
+      ],
+      [
+       -97.6307703,
+       30.4390158
+      ],
+      [
+       -97.6311868,
+       30.4392771
+      ],
+      [
+       -97.6314313,
+       30.4394623
+      ],
+      [
+       -97.6317634,
+       30.439745
+      ],
+      [
+       -97.6320792,
+       30.4400315
+      ],
+      [
+       -97.6317454,
+       30.4401464
+      ],
+      [
+       -97.6320102,
+       30.4405454
+      ],
+      [
+       -97.6323325,
+       30.4404325
+      ],
+      [
+       -97.6329295,
+       30.4411508
+      ],
+      [
+       -97.6337851,
+       30.4414838
+      ],
+      [
+       -97.6332484,
+       30.4425018
+      ],
+      [
+       -97.6369891,
+       30.4442305
+      ],
+      [
+       -97.6371433,
+       30.4439812
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 544674301,
+    "osm_type": "way",
+    "name": "Creekside Park",
+    "display_name": "Creekside Park, 418, Pflugerville, Travis County, Texas, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 202765.6,
+    "open_lat": 30.4321093,
+    "open_lon": -97.6249433,
+    "open_radius_m": 110.3,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4321093,
+    "verified_lon": -97.6249433,
+    "nearest_feature": "building/detached 110, Mountain View Drive, Settler's Ridg at 135 m",
+    "anchor_clearance_score_m": 99.7,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.617682,
+       30.4694769
+      ],
+      [
+       -97.6175558,
+       30.4667687
+      ],
+      [
+       -97.6176386,
+       30.4663161
+      ],
+      [
+       -97.6175737,
+       30.4653416
+      ],
+      [
+       -97.6167511,
+       30.4647296
+      ],
+      [
+       -97.6161879,
+       30.4639205
+      ],
+      [
+       -97.615748,
+       30.4631159
+      ],
+      [
+       -97.615478,
+       30.4633741
+      ],
+      [
+       -97.6155694,
+       30.4636424
+      ],
+      [
+       -97.6156457,
+       30.4637622
+      ],
+      [
+       -97.6159672,
+       30.4642096
+      ],
+      [
+       -97.616255,
+       30.4651534
+      ],
+      [
+       -97.6163221,
+       30.4652972
+      ],
+      [
+       -97.6164,
+       30.4655433
+      ],
+      [
+       -97.616489,
+       30.4658685
+      ],
+      [
+       -97.6167152,
+       30.4665134
+      ],
+      [
+       -97.6167458,
+       30.4667432
+      ],
+      [
+       -97.6167062,
+       30.4669812
+      ],
+      [
+       -97.6166173,
+       30.4672121
+      ],
+      [
+       -97.6164995,
+       30.4674449
+      ],
+      [
+       -97.6163383,
+       30.4676664
+      ],
+      [
+       -97.6162657,
+       30.4678364
+      ],
+      [
+       -97.6158782,
+       30.4684686
+      ],
+      [
+       -97.6154784,
+       30.4690051
+      ],
+      [
+       -97.6151903,
+       30.4693098
+      ],
+      [
+       -97.6147766,
+       30.4698808
+      ],
+      [
+       -97.6148038,
+       30.4699396
+      ],
+      [
+       -97.6149212,
+       30.4700126
+      ],
+      [
+       -97.615207,
+       30.4701546
+      ],
+      [
+       -97.6155338,
+       30.4702976
+      ],
+      [
+       -97.6157988,
+       30.4703809
+      ],
+      [
+       -97.6163153,
+       30.4705292
+      ],
+      [
+       -97.6166104,
+       30.4706435
+      ],
+      [
+       -97.6173523,
+       30.4710113
+      ],
+      [
+       -97.6175746,
+       30.4706132
+      ],
+      [
+       -97.617682,
+       30.4694769
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 722993812,
+    "osm_type": "way",
+    "name": "Mirror Lake Park",
+    "display_name": "Mirror Lake Park, Pflugerville, Travis County, Texas, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 105449.5,
+    "open_lat": 30.4695155,
+    "open_lon": -97.6164972,
+    "open_radius_m": 112.4,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4695155,
+    "verified_lon": -97.6171415,
+    "nearest_feature": "amenity/parking Kingston Lacy Boulevard, Pflugerville, T at 135 m",
+    "anchor_clearance_score_m": 124.7,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6299507,
+       30.4522148
+      ],
+      [
+       -97.629915,
+       30.4522133
+      ],
+      [
+       -97.6295989,
+       30.4522884
+      ],
+      [
+       -97.6293682,
+       30.4521312
+      ],
+      [
+       -97.6291322,
+       30.4518074
+      ],
+      [
+       -97.6290678,
+       30.4516225
+      ],
+      [
+       -97.6292502,
+       30.4515577
+      ],
+      [
+       -97.6292502,
+       30.4512988
+      ],
+      [
+       -97.6293199,
+       30.4511785
+      ],
+      [
+       -97.6297598,
+       30.4511693
+      ],
+      [
+       -97.629556,
+       30.4507114
+      ],
+      [
+       -97.6290356,
+       30.451012
+      ],
+      [
+       -97.6288693,
+       30.4511831
+      ],
+      [
+       -97.6283168,
+       30.4512756
+      ],
+      [
+       -97.6279574,
+       30.4511369
+      ],
+      [
+       -97.6277696,
+       30.4509011
+      ],
+      [
+       -97.62748,
+       30.4507114
+      ],
+      [
+       -97.6266561,
+       30.4498869
+      ],
+      [
+       -97.626636,
+       30.4498668
+      ],
+      [
+       -97.6261493,
+       30.4506644
+      ],
+      [
+       -97.6254143,
+       30.4518688
+      ],
+      [
+       -97.6255895,
+       30.4519352
+      ],
+      [
+       -97.6244693,
+       30.4537088
+      ],
+      [
+       -97.6258963,
+       30.4531858
+      ],
+      [
+       -97.6262525,
+       30.4530755
+      ],
+      [
+       -97.6266054,
+       30.4530014
+      ],
+      [
+       -97.6268903,
+       30.4529535
+      ],
+      [
+       -97.6272788,
+       30.4529265
+      ],
+      [
+       -97.6276886,
+       30.4529348
+      ],
+      [
+       -97.6279561,
+       30.4529518
+      ],
+      [
+       -97.6283483,
+       30.4530165
+      ],
+      [
+       -97.6286219,
+       30.4530825
+      ],
+      [
+       -97.6289283,
+       30.4531794
+      ],
+      [
+       -97.6291959,
+       30.4532852
+      ],
+      [
+       -97.6293757,
+       30.4533534
+      ],
+      [
+       -97.6294107,
+       30.4533504
+      ],
+      [
+       -97.6294701,
+       30.4532777
+      ],
+      [
+       -97.6295888,
+       30.4530894
+      ],
+      [
+       -97.6297925,
+       30.452672
+      ],
+      [
+       -97.6298976,
+       30.4524044
+      ],
+      [
+       -97.6299507,
+       30.4522148
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 589335177,
+    "osm_type": "way",
+    "name": "Pfennig Park",
+    "display_name": "Pfennig Park, 1301, Pflugerville, Travis County, Texas, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 103494.3,
+    "open_lat": 30.4518202,
+    "open_lon": -97.6269156,
+    "open_radius_m": 124.9,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4518202,
+    "verified_lon": -97.6261995,
+    "nearest_feature": "leisure/pitch Gilleland Creek Trail, Swenson Farms, Pf at 66 m",
+    "anchor_clearance_score_m": 51.3,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6153511,
+       30.4368511
+      ],
+      [
+       -97.6146568,
+       30.4360571
+      ],
+      [
+       -97.6142514,
+       30.435724
+      ],
+      [
+       -97.6145017,
+       30.4353817
+      ],
+      [
+       -97.6139116,
+       30.4349562
+      ],
+      [
+       -97.6143944,
+       30.4341422
+      ],
+      [
+       -97.6137755,
+       30.4344858
+      ],
+      [
+       -97.6136112,
+       30.434577
+      ],
+      [
+       -97.6132947,
+       30.4345122
+      ],
+      [
+       -97.6132089,
+       30.4344659
+      ],
+      [
+       -97.6130604,
+       30.4344524
+      ],
+      [
+       -97.6129031,
+       30.4344382
+      ],
+      [
+       -97.6126893,
+       30.4342275
+      ],
+      [
+       -97.612415,
+       30.4339572
+      ],
+      [
+       -97.6125866,
+       30.4336288
+      ],
+      [
+       -97.6120403,
+       30.4334693
+      ],
+      [
+       -97.6119969,
+       30.4334567
+      ],
+      [
+       -97.6118892,
+       30.4334253
+      ],
+      [
+       -97.6117603,
+       30.4334288
+      ],
+      [
+       -97.6115888,
+       30.4333466
+      ],
+      [
+       -97.6112133,
+       30.433934
+      ],
+      [
+       -97.6111371,
+       30.4340457
+      ],
+      [
+       -97.6109616,
+       30.434303
+      ],
+      [
+       -97.6108598,
+       30.4344673
+      ],
+      [
+       -97.6106923,
+       30.4348444
+      ],
+      [
+       -97.6136522,
+       30.4362958
+      ],
+      [
+       -97.6137722,
+       30.4363438
+      ],
+      [
+       -97.6139224,
+       30.4362543
+      ],
+      [
+       -97.6142,
+       30.436508
+      ],
+      [
+       -97.6148841,
+       30.436845
+      ],
+      [
+       -97.6153174,
+       30.437083
+      ],
+      [
+       -97.6153511,
+       30.4368511
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 74390487,
+    "osm_type": "way",
+    "name": "Bohls Park",
+    "display_name": "Bohls Park, 200, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 67622.9,
+    "open_lat": 30.4345311,
+    "open_lon": -97.6118297,
+    "open_radius_m": 84.2,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4341145,
+    "verified_lon": -97.6118297,
+    "nearest_feature": "highway/path Pflugerville Hike and Bike Trail at 68 m",
+    "anchor_clearance_score_m": 47.6,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6347387,
+       30.4541026
+      ],
+      [
+       -97.6333003,
+       30.4533705
+      ],
+      [
+       -97.6334076,
+       30.4531069
+      ],
+      [
+       -97.6329463,
+       30.45313
+      ],
+      [
+       -97.6322125,
+       30.4528714
+      ],
+      [
+       -97.6314762,
+       30.452612
+      ],
+      [
+       -97.6313584,
+       30.4525705
+      ],
+      [
+       -97.6310151,
+       30.4523346
+      ],
+      [
+       -97.6309078,
+       30.4522884
+      ],
+      [
+       -97.6301338,
+       30.452377
+      ],
+      [
+       -97.6300917,
+       30.4523818
+      ],
+      [
+       -97.6299019,
+       30.452838
+      ],
+      [
+       -97.6298034,
+       30.4530373
+      ],
+      [
+       -97.6295719,
+       30.4534093
+      ],
+      [
+       -97.6295737,
+       30.4534294
+      ],
+      [
+       -97.6295874,
+       30.4534559
+      ],
+      [
+       -97.6338756,
+       30.4554662
+      ],
+      [
+       -97.6346194,
+       30.454291
+      ],
+      [
+       -97.6347387,
+       30.4541026
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 589335178,
+    "osm_type": "way",
+    "name": "Swenson Park",
+    "display_name": "Swenson Park, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 83123.5,
+    "open_lat": 30.4538817,
+    "open_lon": -97.6325236,
+    "open_radius_m": 92.7,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4543403,
+    "verified_lon": -97.6325236,
+    "nearest_feature": "building/yes 1016, Pfennig Lane, Swenson Farms, Pflug at 92 m",
+    "anchor_clearance_score_m": 56.6,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6214486,
+       30.4268016
+      ],
+      [
+       -97.6213735,
+       30.4267831
+      ],
+      [
+       -97.6207834,
+       30.4277128
+      ],
+      [
+       -97.6207405,
+       30.4277082
+      ],
+      [
+       -97.6206762,
+       30.427847
+      ],
+      [
+       -97.6204509,
+       30.4278932
+      ],
+      [
+       -97.6204348,
+       30.4279904
+      ],
+      [
+       -97.6203972,
+       30.4280459
+      ],
+      [
+       -97.6204548,
+       30.4280864
+      ],
+      [
+       -97.6204495,
+       30.4281754
+      ],
+      [
+       -97.6201344,
+       30.4286657
+      ],
+      [
+       -97.6200324,
+       30.4288276
+      ],
+      [
+       -97.6198514,
+       30.4288801
+      ],
+      [
+       -97.6197146,
+       30.4290916
+      ],
+      [
+       -97.6196861,
+       30.4291373
+      ],
+      [
+       -97.6195157,
+       30.4293979
+      ],
+      [
+       -97.6195711,
+       30.4294705
+      ],
+      [
+       -97.6195765,
+       30.4295261
+      ],
+      [
+       -97.6194853,
+       30.4296694
+      ],
+      [
+       -97.6193029,
+       30.4299238
+      ],
+      [
+       -97.6191044,
+       30.4298406
+      ],
+      [
+       -97.618939,
+       30.4301196
+      ],
+      [
+       -97.6187664,
+       30.4301597
+      ],
+      [
+       -97.6187342,
+       30.43028
+      ],
+      [
+       -97.6186645,
+       30.4304003
+      ],
+      [
+       -97.6189327,
+       30.4305159
+      ],
+      [
+       -97.6183748,
+       30.4314068
+      ],
+      [
+       -97.6183476,
+       30.4314251
+      ],
+      [
+       -97.6184598,
+       30.4314804
+      ],
+      [
+       -97.620302,
+       30.4286042
+      ],
+      [
+       -97.6207244,
+       30.4279025
+      ],
+      [
+       -97.6214486,
+       30.4268016
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 74454298,
+    "osm_type": "way",
+    "name": "Cambridge Estates Park",
+    "display_name": "Cambridge Estates Park, Pflugerville, Travis County, Texas, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 9161.0,
+    "open_lat": 30.4303107,
+    "open_lon": -97.618958,
+    "open_radius_m": 21.0,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4302069,
+    "verified_lon": -97.618958,
+    "nearest_feature": "building/detached 810, Windsor Hill Drive, Pflugerville, T at 23 m",
+    "anchor_clearance_score_m": -11.6,
+    "open_ground_verified": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6381947,
+       30.4606406
+      ],
+      [
+       -97.6380789,
+       30.4605877
+      ],
+      [
+       -97.637934,
+       30.4605207
+      ],
+      [
+       -97.6377469,
+       30.4604531
+      ],
+      [
+       -97.6376258,
+       30.460418
+      ],
+      [
+       -97.6375531,
+       30.4603956
+      ],
+      [
+       -97.6374348,
+       30.4603671
+      ],
+      [
+       -97.6371672,
+       30.4603344
+      ],
+      [
+       -97.6369802,
+       30.4603215
+      ],
+      [
+       -97.636831,
+       30.4603246
+      ],
+      [
+       -97.6367786,
+       30.4603542
+      ],
+      [
+       -97.6367784,
+       30.4603765
+      ],
+      [
+       -97.6368632,
+       30.4611505
+      ],
+      [
+       -97.6372118,
+       30.4611246
+      ],
+      [
+       -97.6372525,
+       30.4614485
+      ],
+      [
+       -97.6372401,
+       30.4616028
+      ],
+      [
+       -97.6372144,
+       30.4617598
+      ],
+      [
+       -97.6371583,
+       30.4619276
+      ],
+      [
+       -97.6370813,
+       30.4620778
+      ],
+      [
+       -97.6354255,
+       30.4646678
+      ],
+      [
+       -97.6353802,
+       30.4647439
+      ],
+      [
+       -97.6354833,
+       30.4647952
+      ],
+      [
+       -97.6355518,
+       30.464699
+      ],
+      [
+       -97.6366867,
+       30.4629231
+      ],
+      [
+       -97.6367568,
+       30.4629271
+      ],
+      [
+       -97.6369015,
+       30.4626775
+      ],
+      [
+       -97.6368642,
+       30.4626574
+      ],
+      [
+       -97.6369599,
+       30.4624924
+      ],
+      [
+       -97.6369832,
+       30.4625024
+      ],
+      [
+       -97.6371586,
+       30.4622197
+      ],
+      [
+       -97.6372901,
+       30.4620077
+      ],
+      [
+       -97.6374982,
+       30.4616725
+      ],
+      [
+       -97.6377832,
+       30.4611941
+      ],
+      [
+       -97.6379429,
+       30.4610291
+      ],
+      [
+       -97.638069,
+       30.4608379
+      ],
+      [
+       -97.6381344,
+       30.4607413
+      ],
+      [
+       -97.6381801,
+       30.460665
+      ],
+      [
+       -97.6381947,
+       30.4606406
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 683688487,
+    "osm_type": "way",
+    "name": "Black Locust Park",
+    "display_name": "Black Locust Park, 608, Pflugerville, Travis County, Texas, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 17430.8,
+    "open_lat": 30.4608195,
+    "open_lon": -97.6375262,
+    "open_radius_m": 45.3,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4608195,
+    "verified_lon": -97.6375262,
+    "nearest_feature": "leisure/playground West Black Locust Drive, Swenson Farms,  at 58 m",
+    "anchor_clearance_score_m": 42.7,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6216981,
+       30.4452854
+      ],
+      [
+       -97.6213712,
+       30.4451926
+      ],
+      [
+       -97.6203386,
+       30.4447625
+      ],
+      [
+       -97.6201441,
+       30.4446203
+      ],
+      [
+       -97.6196426,
+       30.4443637
+      ],
+      [
+       -97.6194575,
+       30.4442318
+      ],
+      [
+       -97.6191477,
+       30.4440272
+      ],
+      [
+       -97.6184248,
+       30.4438457
+      ],
+      [
+       -97.6182648,
+       30.4451623
+      ],
+      [
+       -97.6182572,
+       30.445225
+      ],
+      [
+       -97.6193989,
+       30.4457389
+      ],
+      [
+       -97.6204432,
+       30.4462089
+      ],
+      [
+       -97.6205787,
+       30.4462332
+      ],
+      [
+       -97.6210472,
+       30.4462736
+      ],
+      [
+       -97.6211768,
+       30.4460783
+      ],
+      [
+       -97.621259,
+       30.4459124
+      ],
+      [
+       -97.6214257,
+       30.445692
+      ],
+      [
+       -97.6216981,
+       30.4452854
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 683705451,
+    "osm_type": "way",
+    "name": "Gilleland Creek Park",
+    "display_name": "Gilleland Creek Park, 700, Pflugerville, Travis County, Texas, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 46152.0,
+    "open_lat": 30.4448449,
+    "open_lon": -97.6190973,
+    "open_radius_m": 74.6,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4452139,
+    "verified_lon": -97.6190973,
+    "nearest_feature": "amenity/parking Gilleland Creek Trail, Meadow Park, Pflu at 31 m",
+    "anchor_clearance_score_m": 20.7,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6076513,
+       30.4420272
+      ],
+      [
+       -97.6064857,
+       30.4417123
+      ],
+      [
+       -97.6063094,
+       30.441973
+      ],
+      [
+       -97.6058222,
+       30.4418137
+      ],
+      [
+       -97.6050831,
+       30.4435081
+      ],
+      [
+       -97.6049406,
+       30.4436253
+      ],
+      [
+       -97.6048971,
+       30.4437642
+      ],
+      [
+       -97.6050458,
+       30.4439655
+      ],
+      [
+       -97.6058354,
+       30.4440067
+      ],
+      [
+       -97.6067821,
+       30.4441974
+      ],
+      [
+       -97.6069626,
+       30.4437474
+      ],
+      [
+       -97.60699,
+       30.4436439
+      ],
+      [
+       -97.607012,
+       30.4436124
+      ],
+      [
+       -97.6072461,
+       30.4430249
+      ],
+      [
+       -97.607293,
+       30.4429146
+      ],
+      [
+       -97.6076513,
+       30.4420272
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 564145809,
+    "osm_type": "way",
+    "name": "Heritage Park",
+    "display_name": "Heritage Park, 901, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 45252.3,
+    "open_lat": 30.443217,
+    "open_lon": -97.6061955,
+    "open_radius_m": 88.4,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.443217,
+    "verified_lon": -97.6056889,
+    "nearest_feature": "leisure/pitch Sweet William Lane, Bohl's Place, Pfluge at 32 m",
+    "anchor_clearance_score_m": 17.2,
+    "open_ground_verified": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6251729,
+       30.4694153
+      ],
+      [
+       -97.6249664,
+       30.4686501
+      ],
+      [
+       -97.6248832,
+       30.4684467
+      ],
+      [
+       -97.624902,
+       30.4682617
+      ],
+      [
+       -97.6237621,
+       30.4678017
+      ],
+      [
+       -97.6232551,
+       30.4686085
+      ],
+      [
+       -97.6228555,
+       30.4692604
+      ],
+      [
+       -97.6226838,
+       30.4696766
+      ],
+      [
+       -97.6227026,
+       30.4699378
+      ],
+      [
+       -97.6227697,
+       30.4699771
+      ],
+      [
+       -97.6231023,
+       30.4698615
+      ],
+      [
+       -97.6235582,
+       30.4697367
+      ],
+      [
+       -97.62432,
+       30.4695864
+      ],
+      [
+       -97.6251729,
+       30.4694153
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 727155350,
+    "osm_type": "way",
+    "name": "Springbrook Neighborhood Park",
+    "display_name": "Springbrook Neighborhood Park, Pflugerville, Travis County, Texas, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 33607.5,
+    "open_lat": 30.4688427,
+    "open_lon": -97.6241104,
+    "open_radius_m": 84.5,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4688427,
+    "verified_lon": -97.6241104,
+    "nearest_feature": "leisure/pitch Wilke Ridge Lane, Pflugerville, Travis C at 55 m",
+    "anchor_clearance_score_m": 40.4,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6357548,
+       30.4556449
+      ],
+      [
+       -97.6343799,
+       30.4550303
+      ],
+      [
+       -97.634048,
+       30.4555443
+      ],
+      [
+       -97.635385,
+       30.4561643
+      ],
+      [
+       -97.6354077,
+       30.4561641
+      ],
+      [
+       -97.6354292,
+       30.4561552
+      ],
+      [
+       -97.6357548,
+       30.4556449
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1217235655,
+    "osm_type": "way",
+    "name": "Heatherwilde at Pflugerville HOA Park",
+    "display_name": "Heatherwilde at Pflugerville HOA Park, 47, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 9886.8,
+    "open_lat": 30.4557585,
+    "open_lon": -97.6352481,
+    "open_radius_m": 33.5,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4557585,
+    "verified_lon": -97.6352481,
+    "nearest_feature": "leisure/playground Gilleland Creek Trail, Swenson Farms, Pf at 39 m",
+    "anchor_clearance_score_m": 23.5,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6406292,
+       30.4671251
+      ],
+      [
+       -97.6406241,
+       30.4671067
+      ],
+      [
+       -97.6405995,
+       30.4670965
+      ],
+      [
+       -97.6405533,
+       30.4670819
+      ],
+      [
+       -97.6400449,
+       30.4670633
+      ],
+      [
+       -97.6399571,
+       30.4671257
+      ],
+      [
+       -97.63984,
+       30.4671589
+      ],
+      [
+       -97.6396752,
+       30.4674935
+      ],
+      [
+       -97.6393609,
+       30.4677803
+      ],
+      [
+       -97.6396982,
+       30.4681273
+      ],
+      [
+       -97.6397226,
+       30.4681378
+      ],
+      [
+       -97.639744,
+       30.4681404
+      ],
+      [
+       -97.6397714,
+       30.4681282
+      ],
+      [
+       -97.6400794,
+       30.467896
+      ],
+      [
+       -97.6402704,
+       30.4677261
+      ],
+      [
+       -97.6404442,
+       30.4675202
+      ],
+      [
+       -97.6405479,
+       30.467331
+      ],
+      [
+       -97.6406211,
+       30.4671654
+      ],
+      [
+       -97.6406292,
+       30.4671251
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1225898815,
+    "osm_type": "way",
+    "name": "Windermere HOA North Park",
+    "display_name": "Windermere HOA North Park, Pflugerville, Travis County, Texas, United States",
+    "feature_type": "park",
+    "region": "pflugerville",
+    "area_m2": 7679.6,
+    "open_lat": 30.4674051,
+    "open_lon": -97.640104,
+    "open_radius_m": 33.9,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4674051,
+    "verified_lon": -97.6399096,
+    "nearest_feature": "leisure/swimming_pool Windermere HOA North Pool at 8 m",
+    "anchor_clearance_score_m": -6.6,
+    "open_ground_verified": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6482767,
+       30.4402979
+      ],
+      [
+       -97.6458601,
+       30.4391272
+      ],
+      [
+       -97.6444763,
+       30.4413385
+      ],
+      [
+       -97.6468834,
+       30.4424754
+      ],
+      [
+       -97.6482767,
+       30.4402979
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1312879881,
+    "osm_type": "way",
+    "name": "Wells Point Sports Park",
+    "display_name": "Wells Point Sports Park, Pflugerville, Travis County, Texas, United States",
+    "feature_type": "recreation_ground",
+    "region": "pflugerville",
+    "area_m2": 73537.8,
+    "open_lat": 30.4407948,
+    "open_lon": -97.6463841,
+    "open_radius_m": 132.3,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4407948,
+    "verified_lon": -97.6463841,
+    "nearest_feature": "amenity/school Spring Hill Elementary School at 227 m",
+    "anchor_clearance_score_m": 217.3,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6158343,
+       30.4265702
+      ],
+      [
+       -97.6136402,
+       30.4254948
+      ],
+      [
+       -97.6133915,
+       30.4259349
+      ],
+      [
+       -97.612461,
+       30.4273958
+      ],
+      [
+       -97.6146386,
+       30.4283697
+      ],
+      [
+       -97.6158343,
+       30.4265702
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1225684136,
+    "osm_type": "way",
+    "name": "Pflugerville Little League",
+    "display_name": "Pflugerville Little League, Pflugerville, Travis County, Texas, United States",
+    "feature_type": "recreation_ground",
+    "region": "pflugerville",
+    "area_m2": 55875.8,
+    "open_lat": 30.4269664,
+    "open_lon": -97.6141608,
+    "open_radius_m": 117.4,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL",
+    "verified_lat": 30.4269664,
+    "verified_lon": -97.6134881,
+    "nearest_feature": "leisure/pitch Immanuel Road, Pflugerville, Travis Coun at 41 m",
+    "anchor_clearance_score_m": 26.3,
+    "open_ground_verified": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6372096,
+       30.4443937
+      ],
+      [
+       -97.6369891,
+       30.4442305
+      ],
+      [
+       -97.6332484,
+       30.4425018
+      ],
+      [
+       -97.6318679,
+       30.4418638
+      ],
+      [
+       -97.6313353,
+       30.4427062
+      ],
+      [
+       -97.6312563,
+       30.4428309
+      ],
+      [
+       -97.6303941,
+       30.4441946
+      ],
+      [
+       -97.6322164,
+       30.4450675
+      ],
+      [
+       -97.6331008,
+       30.4454891
+      ],
+      [
+       -97.6335371,
+       30.4456811
+      ],
+      [
+       -97.6336772,
+       30.4457475
+      ],
+      [
+       -97.6348592,
+       30.4463544
+      ],
+      [
+       -97.6351735,
+       30.4459081
+      ],
+      [
+       -97.635378,
+       30.445759
+      ],
+      [
+       -97.6357495,
+       30.4456324
+      ],
+      [
+       -97.6359627,
+       30.4455544
+      ],
+      [
+       -97.6360868,
+       30.4454913
+      ],
+      [
+       -97.6364154,
+       30.4451983
+      ],
+      [
+       -97.6368392,
+       30.4449323
+      ],
+      [
+       -97.6370163,
+       30.4447428
+      ],
+      [
+       -97.6372096,
+       30.4443937
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 656332061,
+    "osm_type": "way",
+    "name": "Pflugerville High School",
+    "display_name": "Pflugerville High School, 1301, West Pecan Street, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "school",
+    "region": "pflugerville",
+    "area_m2": 162469.3,
+    "open_lat": 30.4442758,
+    "open_lon": -97.6337819,
+    "open_radius_m": 149.6,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.5932146,
+       30.4614856
+      ],
+      [
+       -97.5897077,
+       30.459917
+      ],
+      [
+       -97.5887292,
+       30.4614302
+      ],
+      [
+       -97.5881425,
+       30.4623376
+      ],
+      [
+       -97.5868848,
+       30.4642826
+      ],
+      [
+       -97.5868045,
+       30.4644067
+      ],
+      [
+       -97.5862806,
+       30.4652168
+      ],
+      [
+       -97.5858546,
+       30.4658756
+      ],
+      [
+       -97.5881298,
+       30.4669501
+      ],
+      [
+       -97.5889794,
+       30.4656705
+      ],
+      [
+       -97.5901945,
+       30.4662291
+      ],
+      [
+       -97.591284,
+       30.4645324
+      ],
+      [
+       -97.5919321,
+       30.4635095
+      ],
+      [
+       -97.5930846,
+       30.4617087
+      ],
+      [
+       -97.5932146,
+       30.4614856
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 571095016,
+    "osm_type": "way",
+    "name": "Hendrickson High School",
+    "display_name": "Hendrickson High School, 19201, Colorado Sand Drive, Cornerstone At Kelly Lane, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "school",
+    "region": "pflugerville",
+    "area_m2": 269196.8,
+    "open_lat": 30.4639212,
+    "open_lon": -97.5893994,
+    "open_radius_m": 191.1,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6204087,
+       30.4567205
+      ],
+      [
+       -97.6202542,
+       30.4549082
+      ],
+      [
+       -97.6200475,
+       30.4550302
+      ],
+      [
+       -97.6189622,
+       30.4555918
+      ],
+      [
+       -97.6183373,
+       30.4559247
+      ],
+      [
+       -97.6180396,
+       30.4560288
+      ],
+      [
+       -97.6177257,
+       30.4560958
+      ],
+      [
+       -97.6174682,
+       30.4560958
+      ],
+      [
+       -97.616905,
+       30.456045
+      ],
+      [
+       -97.6168647,
+       30.4561282
+      ],
+      [
+       -97.6168057,
+       30.457245
+      ],
+      [
+       -97.6193109,
+       30.4583571
+      ],
+      [
+       -97.6195854,
+       30.4579479
+      ],
+      [
+       -97.6204087,
+       30.4567205
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 571787328,
+    "osm_type": "way",
+    "name": "Park Crest Middle School",
+    "display_name": "Park Crest Middle School, Lincolns Sparrow Drive, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "school",
+    "region": "pflugerville",
+    "area_m2": 77005.1,
+    "open_lat": 30.4569223,
+    "open_lon": -97.6188178,
+    "open_radius_m": 120.1,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6451787,
+       30.4647389
+      ],
+      [
+       -97.6441647,
+       30.4642511
+      ],
+      [
+       -97.6444386,
+       30.463815
+      ],
+      [
+       -97.644458,
+       30.4637841
+      ],
+      [
+       -97.6440637,
+       30.4636779
+      ],
+      [
+       -97.6439551,
+       30.463531
+      ],
+      [
+       -97.6437981,
+       30.463437
+      ],
+      [
+       -97.6437019,
+       30.4634045
+      ],
+      [
+       -97.6435385,
+       30.4633979
+      ],
+      [
+       -97.6422953,
+       30.4633858
+      ],
+      [
+       -97.6412513,
+       30.4633814
+      ],
+      [
+       -97.6411806,
+       30.4646163
+      ],
+      [
+       -97.6416181,
+       30.464765
+      ],
+      [
+       -97.6419447,
+       30.4649987
+      ],
+      [
+       -97.642405,
+       30.4654292
+      ],
+      [
+       -97.6426812,
+       30.4656733
+      ],
+      [
+       -97.6430031,
+       30.4659098
+      ],
+      [
+       -97.6441323,
+       30.4664072
+      ],
+      [
+       -97.6451787,
+       30.4647389
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 666587521,
+    "osm_type": "way",
+    "name": "Windermere Elementary School",
+    "display_name": "Windermere Elementary School, 429, Grand Avenue Parkway, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "school",
+    "region": "pflugerville",
+    "area_m2": 80230.6,
+    "open_lat": 30.4644426,
+    "open_lon": -97.6429844,
+    "open_radius_m": 115.2,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6422557,
+       30.4423701
+      ],
+      [
+       -97.6419382,
+       30.4422562
+      ],
+      [
+       -97.6391166,
+       30.4409061
+      ],
+      [
+       -97.638735,
+       30.4415403
+      ],
+      [
+       -97.6387873,
+       30.442826
+      ],
+      [
+       -97.639537,
+       30.4431867
+      ],
+      [
+       -97.6401459,
+       30.4435012
+      ],
+      [
+       -97.6406501,
+       30.4435474
+      ],
+      [
+       -97.6410042,
+       30.4432977
+      ],
+      [
+       -97.6415453,
+       30.4435395
+      ],
+      [
+       -97.6422557,
+       30.4423701
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 666709761,
+    "osm_type": "way",
+    "name": "Pflugerville Middle School",
+    "display_name": "Pflugerville Middle School, Indian Run Drive, Pflugerville, Travis County, Texas, 78691, United States",
+    "feature_type": "school",
+    "region": "pflugerville",
+    "area_m2": 60574.5,
+    "open_lat": 30.4425415,
+    "open_lon": -97.6403509,
+    "open_radius_m": 101.6,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6468834,
+       30.4424754
+      ],
+      [
+       -97.6445768,
+       30.4413412
+      ],
+      [
+       -97.6444763,
+       30.4413385
+      ],
+      [
+       -97.6435856,
+       30.4426915
+      ],
+      [
+       -97.6460029,
+       30.4438455
+      ],
+      [
+       -97.6468834,
+       30.4424754
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 666709764,
+    "osm_type": "way",
+    "name": "Spring Hill Elementary School",
+    "display_name": "Spring Hill Elementary School, Old Austin Pflugerville Road, Pflugerville, Travis County, Texas, 78691, United States",
+    "feature_type": "school",
+    "region": "pflugerville",
+    "area_m2": 46423.7,
+    "open_lat": 30.4423973,
+    "open_lon": -97.6448674,
+    "open_radius_m": 88.1,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6146386,
+       30.4283697
+      ],
+      [
+       -97.612461,
+       30.4273958
+      ],
+      [
+       -97.6115132,
+       30.4288569
+      ],
+      [
+       -97.6135937,
+       30.429845
+      ],
+      [
+       -97.6136615,
+       30.4298772
+      ],
+      [
+       -97.6145857,
+       30.4284513
+      ],
+      [
+       -97.6146386,
+       30.4283697
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 323288389,
+    "osm_type": "way",
+    "name": "Pflugerville Elementary School",
+    "display_name": "Pflugerville Elementary School, 701, Immanuel Road, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "school",
+    "region": "pflugerville",
+    "area_m2": 44483.5,
+    "open_lat": 30.4287156,
+    "open_lon": -97.6132651,
+    "open_radius_m": 94.8,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6202365,
+       30.4518363
+      ],
+      [
+       -97.6196229,
+       30.4516986
+      ],
+      [
+       -97.6191583,
+       30.4516347
+      ],
+      [
+       -97.6187644,
+       30.4514127
+      ],
+      [
+       -97.6185801,
+       30.4513432
+      ],
+      [
+       -97.6180938,
+       30.451037
+      ],
+      [
+       -97.6177235,
+       30.4508797
+      ],
+      [
+       -97.6177071,
+       30.4509317
+      ],
+      [
+       -97.617642,
+       30.4509237
+      ],
+      [
+       -97.6175461,
+       30.4510217
+      ],
+      [
+       -97.6172625,
+       30.4532303
+      ],
+      [
+       -97.6177789,
+       30.4532774
+      ],
+      [
+       -97.6184858,
+       30.4532045
+      ],
+      [
+       -97.6192446,
+       30.4529835
+      ],
+      [
+       -97.6202365,
+       30.4518363
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 666709765,
+    "osm_type": "way",
+    "name": "Brookhollow Elementary School",
+    "display_name": "Brookhollow Elementary School, Brookholllow Trail, Pflugerville, Travis County, Texas, 78691, United States",
+    "feature_type": "school",
+    "region": "pflugerville",
+    "area_m2": 45765.8,
+    "open_lat": 30.4522842,
+    "open_lon": -97.6184184,
+    "open_radius_m": 98.7,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6561128,
+       30.4688224
+      ],
+      [
+       -97.6559733,
+       30.4682768
+      ],
+      [
+       -97.6560484,
+       30.4677775
+      ],
+      [
+       -97.6548522,
+       30.4671255
+      ],
+      [
+       -97.6545068,
+       30.4669983
+      ],
+      [
+       -97.654043,
+       30.466917
+      ],
+      [
+       -97.6538608,
+       30.467733
+      ],
+      [
+       -97.6541014,
+       30.4691713
+      ],
+      [
+       -97.6560396,
+       30.4697773
+      ],
+      [
+       -97.6561128,
+       30.4688224
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 666587519,
+    "osm_type": "way",
+    "name": "Caldwell Elementary School",
+    "display_name": "Caldwell Elementary School, 1718, Picadilly Drive, Round Rock, Travis County, Texas, 78664, United States",
+    "feature_type": "school",
+    "region": "pflugerville",
+    "area_m2": 48765.1,
+    "open_lat": 30.4682187,
+    "open_lon": -97.6549674,
+    "open_radius_m": 96.7,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6335512,
+       30.4501729
+      ],
+      [
+       -97.6334262,
+       30.4497344
+      ],
+      [
+       -97.6334584,
+       30.4495617
+      ],
+      [
+       -97.633429,
+       30.4494974
+      ],
+      [
+       -97.6333955,
+       30.4494448
+      ],
+      [
+       -97.6333521,
+       30.4493919
+      ],
+      [
+       -97.6332945,
+       30.4493398
+      ],
+      [
+       -97.6327444,
+       30.4490752
+      ],
+      [
+       -97.6317064,
+       30.4492301
+      ],
+      [
+       -97.6315682,
+       30.4496545
+      ],
+      [
+       -97.6313941,
+       30.4499558
+      ],
+      [
+       -97.6313611,
+       30.4499791
+      ],
+      [
+       -97.6313408,
+       30.4500016
+      ],
+      [
+       -97.6313267,
+       30.4500351
+      ],
+      [
+       -97.6313227,
+       30.4500793
+      ],
+      [
+       -97.6312136,
+       30.4502681
+      ],
+      [
+       -97.6316841,
+       30.4504938
+      ],
+      [
+       -97.6335512,
+       30.4501729
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1228072751,
+    "osm_type": "way",
+    "name": "Timmerman Elementary School",
+    "display_name": "Timmerman Elementary School, Brogan Lane, Swenson Farms, Pflugerville, Travis County, Texas, 78691, United States",
+    "feature_type": "school",
+    "region": "pflugerville",
+    "area_m2": 24505.3,
+    "open_lat": 30.4497608,
+    "open_lon": -97.6323185,
+    "open_radius_m": 68.0,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6147548,
+       30.4320557
+      ],
+      [
+       -97.6143988,
+       30.4318864
+      ],
+      [
+       -97.614362,
+       30.431944
+      ],
+      [
+       -97.6143439,
+       30.4319353
+      ],
+      [
+       -97.6143166,
+       30.4319781
+      ],
+      [
+       -97.6141186,
+       30.4318839
+      ],
+      [
+       -97.614151,
+       30.4318332
+      ],
+      [
+       -97.6140571,
+       30.4317886
+      ],
+      [
+       -97.6140599,
+       30.4317842
+      ],
+      [
+       -97.6139857,
+       30.431749
+      ],
+      [
+       -97.6141281,
+       30.4315265
+      ],
+      [
+       -97.6140065,
+       30.4314686
+      ],
+      [
+       -97.6137552,
+       30.4318616
+      ],
+      [
+       -97.6139062,
+       30.4319334
+      ],
+      [
+       -97.6139178,
+       30.4319151
+      ],
+      [
+       -97.6140604,
+       30.4319829
+      ],
+      [
+       -97.614021,
+       30.4320446
+      ],
+      [
+       -97.6142354,
+       30.4321466
+      ],
+      [
+       -97.6142083,
+       30.432189
+      ],
+      [
+       -97.6142558,
+       30.4322116
+      ],
+      [
+       -97.6142939,
+       30.4321521
+      ],
+      [
+       -97.6146001,
+       30.4322977
+      ],
+      [
+       -97.6147548,
+       30.4320557
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 74454908,
+    "osm_type": "way",
+    "name": "Immanuel Lutheran Day School",
+    "display_name": "Immanuel Lutheran Day School, 500, Immanuel Road, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "school",
+    "region": "pflugerville",
+    "area_m2": 2745.1,
+    "open_lat": 30.4321057,
+    "open_lon": -97.6145283,
+    "open_radius_m": 15.4,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.5925253,
+       30.451212
+      ],
+      [
+       -97.5906592,
+       30.4503113
+      ],
+      [
+       -97.5897852,
+       30.4517097
+      ],
+      [
+       -97.5916227,
+       30.4525788
+      ],
+      [
+       -97.5925253,
+       30.451212
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1222108187,
+    "osm_type": "way",
+    "name": "Baylor Scott And White Medical Center - Pflugerville",
+    "display_name": "Baylor Scott And White Medical Center - Pflugerville, 2600, East Pflugerville Parkway, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "hospital",
+    "region": "pflugerville",
+    "area_m2": 35687.9,
+    "open_lat": 30.4514035,
+    "open_lon": -97.5910429,
+    "open_radius_m": 87.8,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6064778,
+       30.4432096
+      ],
+      [
+       -97.6064599,
+       30.4431146
+      ],
+      [
+       -97.6060851,
+       30.4429589
+      ],
+      [
+       -97.6060442,
+       30.4429743
+      ],
+      [
+       -97.6060053,
+       30.4430431
+      ],
+      [
+       -97.6060221,
+       30.4430775
+      ],
+      [
+       -97.606125,
+       30.4431363
+      ],
+      [
+       -97.606145,
+       30.4431816
+      ],
+      [
+       -97.606082,
+       30.4432259
+      ],
+      [
+       -97.6060893,
+       30.4433183
+      ],
+      [
+       -97.6062615,
+       30.4434033
+      ],
+      [
+       -97.6063959,
+       30.443321
+      ],
+      [
+       -97.6064778,
+       30.4432096
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 259502088,
+    "osm_type": "way",
+    "name": "Heritage Loop Trail",
+    "display_name": "Heritage Loop Trail, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 1292.9,
+    "open_lat": 30.4431985,
+    "open_lon": -97.6063019,
+    "open_radius_m": 14.9,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6193747,
+       30.4526437
+      ],
+      [
+       -97.6192734,
+       30.4525639
+      ],
+      [
+       -97.6191646,
+       30.4526717
+      ],
+      [
+       -97.6190548,
+       30.4526252
+      ],
+      [
+       -97.6189949,
+       30.4525201
+      ],
+      [
+       -97.6189176,
+       30.4525411
+      ],
+      [
+       -97.6189186,
+       30.4527479
+      ],
+      [
+       -97.6189512,
+       30.4528285
+      ],
+      [
+       -97.619005,
+       30.4528583
+      ],
+      [
+       -97.6190833,
+       30.4527952
+      ],
+      [
+       -97.6191494,
+       30.4528425
+      ],
+      [
+       -97.6193747,
+       30.4526437
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1249345766,
+    "osm_type": "way",
+    "name": "Goodspeed Parkway",
+    "display_name": "Goodspeed Parkway, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 886.2,
+    "open_lat": 30.45272,
+    "open_lon": -97.6190247,
+    "open_radius_m": 10.1,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6219869,
+       30.4466711
+      ],
+      [
+       -97.6219858,
+       30.4466256
+      ],
+      [
+       -97.6219685,
+       30.4465825
+      ],
+      [
+       -97.6219366,
+       30.4465461
+      ],
+      [
+       -97.6218933,
+       30.44652
+      ],
+      [
+       -97.6218428,
+       30.4465066
+      ],
+      [
+       -97.6217849,
+       30.4465082
+      ],
+      [
+       -97.621731,
+       30.4465264
+      ],
+      [
+       -97.6216874,
+       30.4465592
+      ],
+      [
+       -97.6216591,
+       30.4466028
+      ],
+      [
+       -97.6216495,
+       30.446652
+      ],
+      [
+       -97.6216597,
+       30.4467012
+      ],
+      [
+       -97.6216885,
+       30.4467445
+      ],
+      [
+       -97.6217325,
+       30.4467769
+      ],
+      [
+       -97.6217866,
+       30.4467947
+      ],
+      [
+       -97.6218445,
+       30.4467957
+      ],
+      [
+       -97.6218994,
+       30.4467799
+      ],
+      [
+       -97.6219415,
+       30.4467522
+      ],
+      [
+       -97.6219716,
+       30.4467148
+      ],
+      [
+       -97.6219869,
+       30.4466711
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1080672949,
+    "osm_type": "way",
+    "name": "Gilleland Creek Trail",
+    "display_name": "Gilleland Creek Trail, Meadow Park, Pflugerville, Travis County, Texas, 78691, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 814.5,
+    "open_lat": 30.4466512,
+    "open_lon": -97.6218182,
+    "open_radius_m": 15.9,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6544023,
+       30.4689375
+      ],
+      [
+       -97.654381,
+       30.4688864
+      ],
+      [
+       -97.6542837,
+       30.4688734
+      ],
+      [
+       -97.654297,
+       30.4688322
+      ],
+      [
+       -97.654358,
+       30.4687911
+      ],
+      [
+       -97.654363,
+       30.4687657
+      ],
+      [
+       -97.6543642,
+       30.4687598
+      ],
+      [
+       -97.6543784,
+       30.468743
+      ],
+      [
+       -97.6543447,
+       30.4686904
+      ],
+      [
+       -97.6542297,
+       30.4686774
+      ],
+      [
+       -97.6541872,
+       30.4686828
+      ],
+      [
+       -97.6541315,
+       30.4687827
+      ],
+      [
+       -97.6541342,
+       30.4688117
+      ],
+      [
+       -97.6541386,
+       30.4688338
+      ],
+      [
+       -97.6542439,
+       30.4688467
+      ],
+      [
+       -97.6542465,
+       30.4688711
+      ],
+      [
+       -97.6541943,
+       30.4688727
+      ],
+      [
+       -97.6541749,
+       30.4689238
+      ],
+      [
+       -97.6541961,
+       30.4689657
+      ],
+      [
+       -97.6543704,
+       30.4689764
+      ],
+      [
+       -97.6544023,
+       30.4689375
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1249483556,
+    "osm_type": "way",
+    "name": "Cranston Drive",
+    "display_name": "Cranston Drive, Pflugerville, Travis County, Texas, 78664, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 555.8,
+    "open_lat": 30.4687615,
+    "open_lon": -97.6542561,
+    "open_radius_m": 8.6,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6351103,
+       30.4555376
+      ],
+      [
+       -97.6350001,
+       30.4554821
+      ],
+      [
+       -97.6348426,
+       30.4554438
+      ],
+      [
+       -97.6347439,
+       30.4554599
+      ],
+      [
+       -97.634761,
+       30.4555462
+      ],
+      [
+       -97.6350774,
+       30.4556363
+      ],
+      [
+       -97.6351103,
+       30.4555376
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1217235653,
+    "osm_type": "way",
+    "name": "Gilleland Creek Trail",
+    "display_name": "Gilleland Creek Trail, Swenson Farms, Pflugerville, Travis County, Texas, 78691, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 440.3,
+    "open_lat": 30.4555302,
+    "open_lon": -97.6349386,
+    "open_radius_m": 6.7,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6371878,
+       30.4606166
+      ],
+      [
+       -97.6371823,
+       30.4605828
+      ],
+      [
+       -97.6371693,
+       30.4605498
+      ],
+      [
+       -97.6371343,
+       30.4605044
+      ],
+      [
+       -97.6370985,
+       30.460463
+      ],
+      [
+       -97.6370605,
+       30.4604353
+      ],
+      [
+       -97.6370129,
+       30.4604183
+      ],
+      [
+       -97.6369741,
+       30.460423
+      ],
+      [
+       -97.6369467,
+       30.4604393
+      ],
+      [
+       -97.6369316,
+       30.4604608
+      ],
+      [
+       -97.6369206,
+       30.4604949
+      ],
+      [
+       -97.6369202,
+       30.4605385
+      ],
+      [
+       -97.636937,
+       30.4605643
+      ],
+      [
+       -97.636967,
+       30.4605876
+      ],
+      [
+       -97.6369969,
+       30.4606006
+      ],
+      [
+       -97.6369906,
+       30.4606203
+      ],
+      [
+       -97.6370542,
+       30.4606421
+      ],
+      [
+       -97.6370668,
+       30.4606337
+      ],
+      [
+       -97.6370841,
+       30.4606323
+      ],
+      [
+       -97.637133,
+       30.460645
+      ],
+      [
+       -97.6371562,
+       30.4606461
+      ],
+      [
+       -97.6371785,
+       30.4606352
+      ],
+      [
+       -97.6371878,
+       30.4606166
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1083919884,
+    "osm_type": "way",
+    "name": "West Black Locust Drive",
+    "display_name": "West Black Locust Drive, Swenson Farms, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 444.7,
+    "open_lat": 30.4605141,
+    "open_lon": -97.6370164,
+    "open_radius_m": 9.2,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6398969,
+       30.4678838
+      ],
+      [
+       -97.639889,
+       30.4678686
+      ],
+      [
+       -97.639758,
+       30.4677778
+      ],
+      [
+       -97.6397438,
+       30.4677748
+      ],
+      [
+       -97.6396801,
+       30.4678205
+      ],
+      [
+       -97.6396704,
+       30.467832
+      ],
+      [
+       -97.6396386,
+       30.4679136
+      ],
+      [
+       -97.6396332,
+       30.467938
+      ],
+      [
+       -97.6396412,
+       30.4679548
+      ],
+      [
+       -97.6397173,
+       30.4679952
+      ],
+      [
+       -97.639735,
+       30.4679944
+      ],
+      [
+       -97.6397536,
+       30.4679616
+      ],
+      [
+       -97.6397766,
+       30.4679266
+      ],
+      [
+       -97.6398854,
+       30.4679052
+      ],
+      [
+       -97.6398969,
+       30.4678838
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1225898816,
+    "osm_type": "way",
+    "name": "Bishopsgate Drive",
+    "display_name": "Bishopsgate Drive, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 339.7,
+    "open_lat": 30.4678637,
+    "open_lon": -97.6397403,
+    "open_radius_m": 7.4,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.624942,
+       30.4687815
+      ],
+      [
+       -97.6248708,
+       30.4686708
+      ],
+      [
+       -97.6246898,
+       30.4687453
+      ],
+      [
+       -97.6246723,
+       30.4687664
+      ],
+      [
+       -97.6246606,
+       30.4687936
+      ],
+      [
+       -97.6246676,
+       30.4688288
+      ],
+      [
+       -97.6246945,
+       30.4688519
+      ],
+      [
+       -97.6247307,
+       30.468864
+      ],
+      [
+       -97.6247645,
+       30.468857
+      ],
+      [
+       -97.624942,
+       30.4687815
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1225968033,
+    "osm_type": "way",
+    "name": "Worley Drive",
+    "display_name": "Worley Drive, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 337.3,
+    "open_lat": 30.4687864,
+    "open_lon": -97.6247617,
+    "open_radius_m": 7.1,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6058015,
+       30.469715
+      ],
+      [
+       -97.60579,
+       30.4696708
+      ],
+      [
+       -97.6057617,
+       30.4696228
+      ],
+      [
+       -97.6057219,
+       30.4695877
+      ],
+      [
+       -97.6056821,
+       30.4695732
+      ],
+      [
+       -97.605652,
+       30.4695785
+      ],
+      [
+       -97.6056299,
+       30.4695854
+      ],
+      [
+       -97.6056078,
+       30.4696045
+      ],
+      [
+       -97.6055963,
+       30.469651
+      ],
+      [
+       -97.6056016,
+       30.4696937
+      ],
+      [
+       -97.6056219,
+       30.4697379
+      ],
+      [
+       -97.6056511,
+       30.4697806
+      ],
+      [
+       -97.6056963,
+       30.469818
+      ],
+      [
+       -97.6057272,
+       30.4698264
+      ],
+      [
+       -97.6057555,
+       30.469815
+      ],
+      [
+       -97.6057785,
+       30.4697898
+      ],
+      [
+       -97.6057927,
+       30.4697539
+      ],
+      [
+       -97.6058015,
+       30.469715
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1217913026,
+    "osm_type": "way",
+    "name": "Chrighton Castle Bend",
+    "display_name": "Chrighton Castle Bend, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 393.2,
+    "open_lat": 30.4697038,
+    "open_lon": -97.6057035,
+    "open_radius_m": 8.7,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6446065,
+       30.4677795
+      ],
+      [
+       -97.6445662,
+       30.4677541
+      ],
+      [
+       -97.6445314,
+       30.4677633
+      ],
+      [
+       -97.644458,
+       30.4677525
+      ],
+      [
+       -97.6444071,
+       30.4677656
+      ],
+      [
+       -97.6443758,
+       30.467808
+      ],
+      [
+       -97.644366,
+       30.4678527
+      ],
+      [
+       -97.6444187,
+       30.4679051
+      ],
+      [
+       -97.6444357,
+       30.4679174
+      ],
+      [
+       -97.6444992,
+       30.4679159
+      ],
+      [
+       -97.644543,
+       30.4679251
+      ],
+      [
+       -97.6446002,
+       30.4678034
+      ],
+      [
+       -97.6446065,
+       30.4677795
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1250031461,
+    "osm_type": "way",
+    "name": "Coral Cay Lane",
+    "display_name": "Coral Cay Lane, Pflugerville, Travis County, Texas, 78664, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 324.4,
+    "open_lat": 30.4678388,
+    "open_lon": -97.6444862,
+    "open_radius_m": 8.6,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6335651,
+       30.4628913
+      ],
+      [
+       -97.6334757,
+       30.4627403
+      ],
+      [
+       -97.6333605,
+       30.462791
+      ],
+      [
+       -97.6334499,
+       30.462942
+      ],
+      [
+       -97.6335651,
+       30.4628913
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1227791038,
+    "osm_type": "way",
+    "name": "North Heatherwilde Boulevard",
+    "display_name": "North Heatherwilde Boulevard, Swenson Farms, Pflugerville, Travis County, Texas, 78691, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 233.8,
+    "open_lat": 30.4628411,
+    "open_lon": -97.6334628,
+    "open_radius_m": 6.2,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -97.6304195,
+       30.4413331
+      ],
+      [
+       -97.6303969,
+       30.4413089
+      ],
+      [
+       -97.6303339,
+       30.4412881
+      ],
+      [
+       -97.6303113,
+       30.4412908
+      ],
+      [
+       -97.6302498,
+       30.4413941
+      ],
+      [
+       -97.6302825,
+       30.441427
+      ],
+      [
+       -97.6303183,
+       30.4414371
+      ],
+      [
+       -97.6303486,
+       30.4414364
+      ],
+      [
+       -97.6304195,
+       30.4413331
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "osm_id": 1225714119,
+    "osm_type": "way",
+    "name": "11th Street",
+    "display_name": "11th Street, Pflugerville, Travis County, Texas, 78660, United States",
+    "feature_type": "playground",
+    "region": "pflugerville",
+    "area_m2": 167.9,
+    "open_lat": 30.4413673,
+    "open_lon": -97.6303293,
+    "open_radius_m": 5.4,
+    "source": "openstreetmap_nominatim",
+    "licence": "Data (c) OpenStreetMap contributors, ODbL"
+   }
+  }
+ ]
+}

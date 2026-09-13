@@ -1,0 +1,22 @@
+id: SCENARIO-02
+name: State of charge insufficient for delivery, base upwind and close
+description: Rapid state-of-charge loss with a headwind toward the destination. The
+  delivery cannot be completed, but the launch base is close and downwind. The correct
+  action is a return to base, not a forced landing.
+region: Pflugerville, Texas
+context_mode: offline
+decision_step: -1
+mission:
+  base:
+    name: Pflugerville Depot
+    latitude: 30.417439514095943
+    longitude: -97.63155033303856
+  destination:
+    name: Hutto Medical Clinic
+    latitude: 30.45943376197982
+    longitude: -97.58293122531606
+files:
+  telemetry_csv: telemetry.csv
+  known_elzs_geojson: known_elzs.geojson
+  ground_state_json: ground_state.json
+  ground_truth_json: ground_truth.json

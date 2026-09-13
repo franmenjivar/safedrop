@@ -1,0 +1,26 @@
+id: SCENARIO-25
+name: Command link lost with the delivery out of reach
+description: "Link quality has collapsed from 0.9 to 0.11 over the last minute: the\
+  \ remote pilot can see the aircraft and can no longer instruct it. Energy will not\
+  \ reach the delivery or the base. Whatever the aircraft does next it must complete\
+  \ without further instruction, so the recommendation has to be one that needs no\
+  \ mid-course intervention \u2014 and the operator has to be shown it while there\
+  \ is still a link to show it on."
+region: Pflugerville, Texas
+context_mode: offline
+decision_step: -1
+mission:
+  base:
+    name: Pflugerville Depot
+    latitude: 30.409937631186725
+    longitude: -97.62228093070114
+  destination:
+    name: Wells Branch Customer
+    latitude: 30.489515778732223
+    longitude: -97.64734946098736
+files:
+  telemetry_csv: telemetry.csv
+  known_elzs_geojson: known_elzs.geojson
+  ground_state_json: ground_state.json
+  ground_truth_json: ground_truth.json
+  image_directory: images

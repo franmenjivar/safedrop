@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SafeDrop — Contingency Operations Console</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg width="22" height="22" viewBox="0 0 26 26" aria-hidden="true" style="align-self:center">
+        <path d="M13 2 L23 8 V18 L13 24 L3 18 V8 Z" fill="none" stroke="#35DCD8" stroke-width="1.6"/>
+        <circle cx="13" cy="13" r="3.4" fill="#35DCD8"/>
+      </svg>
+      <span class="mark">SafeDrop</span>
+      <span class="sub">Contingency Decision Support</span>
+    </div>
+
+    <div class="controls">
+      <select id="scenario-select" aria-label="Scenario">
+        {% for scenario in scenarios %}
+        <option value="{{ scenario.dir }}">{{ scenario.id }} — {{ scenario.name }}</option>
+        {% endfor %}
+      </select>
+      <button id="btn-start" class="primary">Start</button>
+      <button id="btn-pause">Pause</button>
+      <button id="btn-step">Step</button>
+      <button id="btn-complete">Run to decision</button>
+      <button id="btn-reset">Reset</button>
+    </div>
+
+    <div class="badges">
+      <button id="btn-review" class="review-btn" disabled aria-live="polite">
+        No decision yet
+      </button>
+      <a class="badge nav" href="/about">How it works</a>
+      <span class="badge sim">SIMULATION ONLY</span>
+      <span class="badge" id="badge-mode" hidden></span>
+      <span class="badge" id="badge-state">IDLE</span>
+    </div>
+  </header>
+
+  <p class="scenario-line"><span id="scenario-desc">Select a scenario and press Start.</span></p>
+
+  <main class="grid">
+    <section class="panel" id="panel-telemetry">
+      <h2>Aircraft state</h2>
+      <div class="clock"><span id="sim-clock">t = 0 s</span><span id="sim-progress">0 / 0</span></div>
+      <dl class="readouts" id="readouts"></dl>
+
+      <h3>Deterministic feasibility</h3>
+      <div id="feasibility" class="stack"><p class="muted">Not yet computed.</p></div>
+
+      <h3>Contingency decision</h3>
+      <div id="decision" class="stack"><p class="muted">Awaiting the decision point.</p></div>
+    </section>
+
+    <section class="panel map-panel">
+      <h2>Operating picture</h2>
+      <div id="exec-bar" class="exec" hidden>
+        <span class="exec-dot"></span>
+        <span class="exec-label" id="exec-label"></span>
+        <span class="exec-readout" id="exec-readout"></span>
+        <button id="exec-replay" class="exec-replay" hidden>Replay</button>
+      </div>
+      <div id="map"></div>
+      <ul class="legend">
+        <li><i class="swatch drone"></i>Aircraft</li>
+        <li><i class="swatch envelope"></i>Reachable envelope</li>
+        <li><i class="swatch valid"></i>Ground-valid</li>
+        <li><i class="swatch rejected"></i>Rejected</li>
+        <li><i class="swatch unverified"></i>Unverified</li>
+        <li><i class="swatch route-fail"></i>Rejected route</li>
+        <li><i class="swatch route-ok"></i>Verified route</li>
+        <li><i class="swatch traffic"></i>UAV traffic</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="panel-trace">
+      <h2>Decision trace</h2>
+      <ol class="trace" id="trace"><li class="muted">No events yet.</li></ol>
+    </section>
+  </main>
+
+  <section class="panel wide" id="panel-candidates">
+    <h2>Landing candidates <span class="hint">current ground evidence, not map geometry</span></h2>
+    <div id="candidates" class="cards"><p class="muted">No candidates evaluated yet.</p></div>
+  </section>
+
+  <section class="panel wide" id="panel-recommendation">
+    <h2>Verified recommendation</h2>
+    <div id="verification" class="checks"></div>
+    <pre id="briefing" class="briefing muted">No recommendation yet.</pre>
+    <div id="operator-outcome" class="outcome" hidden></div>
+
+    <div class="operator">
+      <button id="btn-approve" class="approve" disabled>APPROVE</button>
+      <button id="btn-reject" class="reject" disabled>REJECT</button>
+      <span id="operator-note" class="muted">
+        Remote operator authorisation is required. SafeDrop never sends a flight command.
+      </span>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

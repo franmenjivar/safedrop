@@ -1,0 +1,10 @@
+{
+  "scenario_id": "SCENARIO-25",
+  "failure_family": "CONNECTIVITY_TRAFFIC",
+  "expected_action": "LAND_IMMEDIATELY",
+  "expected_candidate_id": "AUS-ELZ-111",
+  "expected_reason_codes": [
+    "LOST_LINK"
+  ],
+  "notes": "Tests that a degraded link is treated as loss of oversight, not loss of airworthiness."
+}

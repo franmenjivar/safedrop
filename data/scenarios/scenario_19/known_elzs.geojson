@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.7040387,
+              30.4083737
+            ],
+            [
+              -97.7026045,
+              30.4067151
+            ],
+            [
+              -97.7020221,
+              30.4053504
+            ],
+            [
+              -97.6998927,
+              30.4056511
+            ],
+            [
+              -97.6998334,
+              30.4053756
+            ],
+            [
+              -97.6991631,
+              30.4055539
+            ],
+            [
+              -97.6987119,
+              30.4055138
+            ],
+            [
+              -97.6983153,
+              30.4054866
+            ],
+            [
+              -97.697962,
+              30.4054766
+            ],
+            [
+              -97.6978411,
+              30.4059232
+            ],
+            [
+              -97.6976737,
+              30.4064637
+            ],
+            [
+              -97.6980955,
+              30.4065474
+            ],
+            [
+              -97.6984398,
+              30.4064079
+            ],
+            [
+              -97.698826,
+              30.4064019
+            ],
+            [
+              -97.6995043,
+              30.4063914
+            ],
+            [
+              -97.6999969,
+              30.4065471
+            ],
+            [
+              -97.7011509,
+              30.4069272
+            ],
+            [
+              -97.70132,
+              30.4069929
+            ],
+            [
+              -97.7009341,
+              30.4079144
+            ],
+            [
+              -97.7009159,
+              30.4079579
+            ],
+            [
+              -97.7021691,
+              30.4081861
+            ],
+            [
+              -97.7039874,
+              30.4085197
+            ],
+            [
+              -97.7040387,
+              30.4083737
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "candidate_id": "AUS-ELZ-051",
+        "name": "Walnut Creek Greenbelt (simulated recovery site)",
+        "feature_type": "park",
+        "surface": "grass",
+        "static_obstacles": [],
+        "image": "elz_051_current.png",
+        "area_m2": 88171.4,
+        "anchor_lat": 30.4066287,
+        "anchor_lon": -97.7014467,
+        "open_radius_m": 84.6,
+        "nearest_feature": "amenity/bench Northern Walnut Creek Trail, Village at  at 52 m",
+        "anchor_clearance_score_m": 41.9,
+        "osm_id": 469564928,
+        "osm_type": "way",
+        "source": "OpenStreetMap way/469564928 (ODbL)",
+        "tier": "PREPLANNED_SIMULATED_ELZ",
+        "certification_status": "SIMULATED"
+      }
+    }
+  ]
+}

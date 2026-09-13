@@ -1,0 +1,147 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.6020857,
+              30.4661529
+            ],
+            [
+              -97.6004248,
+              30.4653095
+            ],
+            [
+              -97.6002249,
+              30.4653209
+            ],
+            [
+              -97.5999282,
+              30.4651852
+            ],
+            [
+              -97.5999527,
+              30.4650533
+            ],
+            [
+              -97.5985212,
+              30.4643222
+            ],
+            [
+              -97.5981943,
+              30.4648629
+            ],
+            [
+              -97.5983445,
+              30.4652818
+            ],
+            [
+              -97.5986272,
+              30.4655636
+            ],
+            [
+              -97.5996297,
+              30.4660143
+            ],
+            [
+              -97.5999216,
+              30.4656053
+            ],
+            [
+              -97.6006936,
+              30.465965
+            ],
+            [
+              -97.6003925,
+              30.4664025
+            ],
+            [
+              -97.6015713,
+              30.4669555
+            ],
+            [
+              -97.6016142,
+              30.4668886
+            ],
+            [
+              -97.6020857,
+              30.4661529
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "candidate_id": "AUS-ELZ-031",
+        "name": "Town Center Drive (simulated recovery site)",
+        "feature_type": "parking_lot",
+        "surface": "asphalt",
+        "static_obstacles": [],
+        "image": null,
+        "area_m2": 36432.1,
+        "anchor_lat": 30.4651631,
+        "anchor_lon": -97.5986875,
+        "open_radius_m": 56.5,
+        "nearest_feature": "amenity/parking Town Center Drive, Stone Hill Town Cente at 217 m",
+        "anchor_clearance_score_m": 207.1,
+        "osm_id": 387447869,
+        "osm_type": "way",
+        "source": "OpenStreetMap way/387447869 (ODbL)",
+        "tier": "PREPLANNED_SIMULATED_ELZ",
+        "certification_status": "SIMULATED"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.6482767,
+              30.4402979
+            ],
+            [
+              -97.6458601,
+              30.4391272
+            ],
+            [
+              -97.6444763,
+              30.4413385
+            ],
+            [
+              -97.6468834,
+              30.4424754
+            ],
+            [
+              -97.6482767,
+              30.4402979
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "candidate_id": "AUS-ELZ-032",
+        "name": "Wells Point Sports Park (simulated recovery site)",
+        "feature_type": "recreation_ground",
+        "surface": "grass",
+        "static_obstacles": [],
+        "image": null,
+        "area_m2": 73537.8,
+        "anchor_lat": 30.4407948,
+        "anchor_lon": -97.6463841,
+        "open_radius_m": 132.3,
+        "nearest_feature": "amenity/school Spring Hill Elementary School at 227 m",
+        "anchor_clearance_score_m": 217.3,
+        "osm_id": 1312879881,
+        "osm_type": "way",
+        "source": "OpenStreetMap way/1312879881 (ODbL)",
+        "tier": "PREPLANNED_SIMULATED_ELZ",
+        "certification_status": "SIMULATED"
+      }
+    }
+  ]
+}

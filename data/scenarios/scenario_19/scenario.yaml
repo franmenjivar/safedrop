@@ -1,0 +1,27 @@
+id: SCENARIO-19
+name: The only ground-safe site has no survivable route
+description: "A forced landing is required and one reachable site is verifiably clear\
+  \ on the ground. UAV traffic is transiting the corridor between the aircraft and\
+  \ that site, so the direct route violates minimum separation \u2014 and there is\
+  \ only enough energy left for the direct route. Every lateral detour that would\
+  \ clear the traffic costs more than remains. Replanning is the right instinct and\
+  \ it cannot help here. The correct output is no recommendation."
+region: North Austin, Texas
+context_mode: offline
+decision_step: -1
+mission:
+  base:
+    name: North Austin Depot
+    latitude: 30.442896916710435
+    longitude: -97.66485532540155
+  destination:
+    name: Gracywoods Customer
+    latitude: 30.38223760076681
+    longitude: -97.72377672039998
+files:
+  telemetry_csv: telemetry.csv
+  known_elzs_geojson: known_elzs.geojson
+  ground_state_json: ground_state.json
+  ground_truth_json: ground_truth.json
+  traffic_csv: traffic.csv
+  image_directory: images

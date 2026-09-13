@@ -1,0 +1,9 @@
+{
+  "scenario_id": "SCENARIO-02",
+  "expected_action": "RETURN_TO_BASE",
+  "expected_reason_codes": [
+    "INSUFFICIENT_MISSION_ENERGY",
+    "RTB_ENERGY_SUFFICIENT"
+  ],
+  "notes": "Tests that a feasible return is preferred over a forced landing."
+}

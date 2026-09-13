@@ -1,0 +1,28 @@
+id: SCENARIO-21
+name: Payload has shifted; the alternate hub is the nearest safe end
+description: 'A 2.9 kg payload has moved in its bay: sustained low-frequency vibration
+  and draw 20% above model, with motor health essentially nominal. The delivery is
+  out of reach on the degraded power figure and the launch base is upwind and far.
+  A staffed alternate hub sits between them. Diverting there ends the flight on a
+  prepared surface rather than a park.'
+region: Pflugerville, Texas
+context_mode: offline
+decision_step: -1
+mission:
+  base:
+    name: Pflugerville Depot
+    latitude: 30.38212906434967
+    longitude: -97.64160300313996
+  destination:
+    name: Hutto Customer
+    latitude: 30.46973788889417
+    longitude: -97.59390495508393
+  alternate_hub:
+    name: Wells Point Alternate Hub
+    latitude: 30.425118094958783
+    longitude: -97.61010213308286
+files:
+  telemetry_csv: telemetry.csv
+  known_elzs_geojson: known_elzs.geojson
+  ground_state_json: ground_state.json
+  ground_truth_json: ground_truth.json

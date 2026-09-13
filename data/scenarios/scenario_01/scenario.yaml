@@ -1,0 +1,22 @@
+id: SCENARIO-01
+name: Battery pack warming, mission energy ample
+description: Pack temperature is trending up and triggers an advisory, but state of
+  charge and wind leave ample margin to the delivery destination. The correct action
+  is to continue; a system that forces a landing here has over-reacted.
+region: North Austin, Texas
+context_mode: offline
+decision_step: -1
+mission:
+  base:
+    name: Domain Fulfilment Hub
+    latitude: 30.395494126330913
+    longitude: -97.74331658285509
+  destination:
+    name: Kramer Lane Customer
+    latitude: 30.407641842560263
+    longitude: -97.71896286971231
+files:
+  telemetry_csv: telemetry.csv
+  known_elzs_geojson: known_elzs.geojson
+  ground_state_json: ground_state.json
+  ground_truth_json: ground_truth.json

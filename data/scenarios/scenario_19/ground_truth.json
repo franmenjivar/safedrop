@@ -1,0 +1,10 @@
+{
+  "scenario_id": "SCENARIO-19",
+  "failure_family": "CONNECTIVITY_TRAFFIC",
+  "expected_action": "LAND_IMMEDIATELY",
+  "expects_abstention": true,
+  "expected_reason_codes": [
+    "NO_VERIFIED_ROUTE"
+  ],
+  "notes": "Abstention case. Agent 1 is right that a landing is required, and Agent 3 is right to try replanning; the system must still refuse to name a plan it could not verify. Traffic blocks the only affordable route and energy blocks every alternative."
+}

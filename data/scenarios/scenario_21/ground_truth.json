@@ -1,0 +1,10 @@
+{
+  "scenario_id": "SCENARIO-21",
+  "failure_family": "PROPULSION_AIRFRAME",
+  "expected_action": "DIVERT_TO_SAFE_HUB",
+  "expected_reason_codes": [
+    "PAYLOAD_INSTABILITY",
+    "HUB_ENERGY_SUFFICIENT"
+  ],
+  "notes": "Tests the diversion branch, which no original scenario exercised."
+}

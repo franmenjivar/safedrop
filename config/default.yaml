@@ -1,0 +1,70 @@
+# SafeDrop prototype experiment parameters.
+# These are NOT regulatory standards. They are tunable hackathon thresholds.
+
+safety:
+  # Planning reserve held back above the landing budget. A forced landing is by
+  # definition an excursion into what remains, so this is deliberately modest.
+  battery_reserve_percent: 5.0
+  minimum_separation_m: 30.0
+  minimum_landing_area_m2: 120.0
+  minimum_visible_clear_area_percent: 70.0
+  ground_data_max_age_sec: 30.0
+  traffic_data_max_age_sec: 15.0
+  max_allowed_vehicles: 0
+  max_allowed_people: 0
+  max_allowed_animals: 0
+  descent_corridor_radius_m: 15.0
+
+energy:
+  # Simulated vehicle profile for a ~25 kg-class VTOL delivery UAV.
+  # These are prototype simulator parameters, not a certified performance model.
+  battery_capacity_wh: 446.0
+  hover_power_w: 1400.0
+  cruise_power_w: 900.0
+  payload_power_w_per_kg: 45.0
+  # Multiplier applied to cruise power as motor health degrades (health 1.0 -> 1.0x).
+  motor_degradation_power_factor: 1.6
+  reserve_landing_sec: 25.0
+
+candidate_generation:
+  school_buffer_m: 100.0
+  hospital_buffer_m: 100.0
+  playground_buffer_m: 80.0
+  major_road_buffer_m: 30.0
+  building_buffer_m: 20.0
+  railway_buffer_m: 40.0
+  power_line_buffer_m: 40.0
+  max_candidates: 8
+
+ranking:
+  # Score = w_energy*E + w_ground*G + w_airspace*A + w_distance*D + w_complexity*C
+  w_energy: 0.30
+  w_ground: 0.20
+  w_airspace: 0.20
+  w_distance: 0.15
+  w_complexity: 0.15
+
+context:
+  default_mode: offline   # offline | live | hybrid
+
+apis:
+  austin_gis_enabled: false
+  overpass_enabled: false
+  open_meteo_enabled: false
+
+agents:
+  # live | scripted — "scripted" replaces the agents with rule-driven stand-ins
+  # so the console runs without a model. Not agent performance.
+  mode: live
+  model: google-gla:gemini-2.5-flash
+  vision_model: google-gla:gemini-2.5-flash
+  retries: 2
+  temperature: 0.0
+  # Experiment switch (overview.md §30): give Agent 1 raw telemetry rows instead
+  # of the compressed operational state, and measure the difference.
+  raw_telemetry_mode: false
+  raw_telemetry_rows: 60
+
+simulation:
+  # 1 simulated second = playback_ms real time
+  playback_ms: 250

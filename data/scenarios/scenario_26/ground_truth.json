@@ -1,0 +1,10 @@
+{
+  "scenario_id": "SCENARIO-26",
+  "failure_family": "CONNECTIVITY_TRAFFIC",
+  "expected_action": "DIVERT_TO_SAFE_HUB",
+  "expected_reason_codes": [
+    "DESTINATION_UNAVAILABLE",
+    "HUB_ENERGY_SUFFICIENT"
+  ],
+  "notes": "A contingency with no aircraft fault at all."
+}

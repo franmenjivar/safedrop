@@ -1,0 +1,76 @@
+# SafeDrop — every entry point, one image.
+#
+#   docker compose up console            the operations console on :8000
+#   docker compose run --rm test         full test suite, no API key needed
+#   docker compose run --rm baseline     deterministic baseline, no API key needed
+#   docker compose run --rm benchmark    baseline vs SafeDrop  (needs GOOGLE_API_KEY)
+#   docker compose run --rm variance     4 repeats for run-to-run spread
+#   docker compose run --rm raw          the state-compression experiment
+#   docker compose run --rm trajectories render readable agent trajectories
+#
+# results/ and trajectories/ are bind-mounted, so output lands on your machine.
+
+x-common: &common
+  build: .
+  image: safedrop:latest
+  env_file:
+    - path: .env
+      required: false
+  volumes:
+    - ./results:/app/results
+    - ./trajectories:/app/trajectories
+  # The image's healthcheck probes the console endpoint, which is the right
+  # test for the default command and meaningless for a one-shot run. Disable it
+  # here so a working benchmark is not labelled unhealthy, and re-enable it on
+  # the console service below.
+  healthcheck:
+    disable: true
+
+services:
+  console:
+    <<: *common
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8000/api/scenarios',timeout=4)"]
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+    # SAFEDROP_AGENTS=scripted runs the whole pipeline with no key and no tokens.
+    environment:
+      SAFEDROP_AGENTS: ${SAFEDROP_AGENTS:-live}
+
+  test:
+    <<: *common
+    command: ["pytest", "-q"]
+
+  baseline:
+    <<: *common
+    command: ["python", "evaluation/run_all.py", "--baseline-only"]
+
+  benchmark:
+    <<: *common
+    command: ["python", "evaluation/run_all.py", "--mode", "offline"]
+
+  variance:
+    <<: *common
+    command: ["python", "evaluation/run_variance.py", "--runs", "4"]
+
+  raw:
+    <<: *common
+    command: ["python", "evaluation/run_all.py", "--mode", "offline", "--raw-telemetry"]
+
+  trajectories:
+    <<: *common
+    command: ["python", "-m", "scripts.export_trajectories", "--best"]
+
+  fixtures:
+    <<: *common
+    # Regenerate every scenario from the committed geometry cache. Writes into
+    # data/, so that has to be mounted too.
+    volumes:
+      - ./results:/app/results
+      - ./trajectories:/app/trajectories
+      - ./data:/app/data
+    command: ["sh", "-c", "python -m scripts.build_fixtures && python -m scripts.scenarios_families"]

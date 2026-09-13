@@ -1,0 +1,8 @@
+{
+  "scenario_id": "SCENARIO-01",
+  "expected_action": "CONTINUE",
+  "expected_reason_codes": [
+    "MISSION_ENERGY_SUFFICIENT"
+  ],
+  "notes": "Tests that a thermal advisory alone does not trigger a forced landing."
+}

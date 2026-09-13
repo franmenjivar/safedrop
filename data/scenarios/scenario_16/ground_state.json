@@ -1,0 +1,14 @@
+{
+  "default_age_sec": 6,
+  "candidates": {
+    "AUTO-PARK-SWENSON": {
+      "data_age_sec": 8,
+      "pedestrian_count": 0,
+      "vehicle_count": 0,
+      "animal_count": 0,
+      "construction_active": false,
+      "clear_area_percent": 92,
+      "surface_condition": "dry"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "auto_field_01.png": {
+    "people_count": 0,
+    "vehicle_count": 0,
+    "animal_count": 0,
+    "large_obstacle_count": 2,
+    "construction_equipment_present": false,
+    "standing_water_visible": false,
+    "visible_clear_area_percent": 94.0
+  }
+}

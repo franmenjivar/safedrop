@@ -1,0 +1,15 @@
+{
+  "default_age_sec": 7,
+  "traffic_data_age_sec": 3,
+  "candidates": {
+    "AUS-ELZ-051": {
+      "data_age_sec": 8,
+      "pedestrian_count": 0,
+      "vehicle_count": 0,
+      "animal_count": 0,
+      "construction_active": false,
+      "clear_area_percent": 94,
+      "surface_condition": "dry"
+    }
+  }
+}
