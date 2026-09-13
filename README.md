@@ -4,6 +4,33 @@
 
 ---
 
+## What it looks like
+
+The operations console at the decision point. Left: the compressed aircraft
+state the agents actually receive. Centre: the operating picture, built on real
+OpenStreetMap geometry. Right: the decision trace, one line per orchestration
+event, tool result and agent output.
+
+![SafeDrop operations console](docs/img/console.png)
+
+The verified recommendation. Every mandatory check is named, and the briefing
+restates the evidence behind the action. Nothing reaches the operator that the
+Safety Verification Gateway has not backed, and the run stops at
+`OPERATOR_PENDING` — approval is a human action.
+
+![Verified recommendation and the operator gate](docs/img/verified-recommendation.png)
+
+The explainer page at `/about`.
+
+![The /about explainer](docs/img/about.png)
+
+> The screenshots above were captured in **scripted mode** — note the
+> `SCRIPTED STAND-INS — NOT AGENT OUTPUT` badge. Rule-driven stand-ins replace
+> the agents so the console runs with no API key. They are not a measurement of
+> agent performance.
+
+---
+
 ## Run it
 
 Everything below works from a clean machine. **Docker is the shortest path — you need
@@ -143,8 +170,6 @@ and stops.
 | Reproduction guide | [`REPRODUCE.md`](REPRODUCE.md) — clean-environment setup, versions, measured runtime and cost |
 | Agent trajectories | [`trajectories/README.md`](trajectories/README.md) — start with `trajectories/readable/` |
 | Results and their caveats | `results/comparison.md`, and **`results/analysis.md` before quoting any number** |
-| Rubric self-audit | [`revision.md`](revision.md) |
-| Video script | [`videoscript.md`](videoscript.md) |
 
 ## What existed before, and what was built here
 
